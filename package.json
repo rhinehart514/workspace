@@ -1,0 +1,24 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "brain/sdk/typescript",
+    "apps/*",
+    "libs/*",
+    "projects/*"
+  ],
+  "scripts": {
+    "nx": "nx",
+    "graph": "nx graph",
+    "build": "nx run-many -t build",
+    "test": "nx run-many -t test"
+  },
+  "devDependencies": {
+    "@nx/js": "^22.2.0",
+    "nx": "^22.2.0",
+    "typescript": "^5.9.3",
+    "js-yaml": "^4.1.0",
+    "@types/js-yaml": "^4.0.9"
+  }
+}

@@ -1,0 +1,49 @@
+# Interactions: Notable Conversations
+# Tracks meaningful exchanges with network
+# Auto-seeded from LinkedIn messages, enriched manually
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+
+# === INTERACTIONS ===
+
+interactions: []
+  # Each interaction has this structure:
+  # - id: int.001
+  #   date: ""
+  #   with: ""  # conn.id or name
+  #   medium: email|call|meeting|message|coffee|linkedin
+  #   topic: ""
+  #
+  #   # What came of it:
+  #   insights: []
+  #   action_items: []
+  #   follow_up: ""
+  #   follow_up_done: false
+  #
+  #   # Thread links (connects to context library):
+  #   related_threads: []  # e.g., thread.saas-futures
+  #   related_beliefs: []  # e.g., belief.distribution-beats-product
+
+# === RECENT (Quick Reference) ===
+
+recent:
+  last_7_days: []
+  last_30_days: []
+
+# === PATTERNS (Auto-computed) ===
+
+patterns:
+  most_frequent_contacts: []
+  topics_discussed_often: []
+  avg_interactions_per_week: 0
+
+# === FOLLOW-UP QUEUE ===
+
+follow_up_queue: []
+  # - interaction_id: int.001
+  #   with: ""
+  #   what: ""
+  #   due: ""
+  #   overdue: false

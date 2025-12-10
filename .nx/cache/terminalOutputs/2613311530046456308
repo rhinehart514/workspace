@@ -1,0 +1,16 @@
+Debugger listening on ws://127.0.0.1:64660/c22c55c6-1a26-4684-9c23-c9a75c07a2ee
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger listening on ws://127.0.0.1:64665/791fa4b4-c4e3-4bba-8f3f-f4528a0fd620
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+
+> @workspace/brain@1.0.0 build
+> tsc
+
+Debugger listening on ws://127.0.0.1:64668/da2dfafc-0d6d-4bd3-bd86-a4e0bb0db997
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...

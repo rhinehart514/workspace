@@ -1,0 +1,312 @@
+{
+  "brain/sdk/typescript": {
+    "root": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "brain/sdk/typescript/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.scope:shared": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:sdk": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.command": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.cwd": [
+      "brain/sdk/typescript/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "brain": {
+    "root": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.scope:shared": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:brain": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build-ts": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build-ts.executor": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build-ts.options": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build-ts.options.command": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.reflect": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.reflect.executor": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.reflect.options": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.reflect.options.command": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.explore": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.explore.executor": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.explore.options": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.explore.options.command": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.synthesize": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.synthesize.executor": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.synthesize.options": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.synthesize.options.command": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.curate": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.curate.executor": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.curate.options": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.curate.options.command": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.network-report": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.network-report.executor": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.network-report.options": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.network-report.options.command": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.network-report.options.cwd": [
+      "brain/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "projects/prompts": {
+    "root": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.scope:project": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:context-library": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.brain": [
+      "projects/prompts/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

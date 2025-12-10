@@ -1,0 +1,154 @@
+{
+  "version": "4.0",
+  "initialized": "2024-12-06",
+  "last_activity": "2025-12-09",
+  "architecture": "proactive-human-aware",
+  "agents": {
+    "reflection": {
+      "last_run": "2024-12-07",
+      "runs_total": 2,
+      "entities_created": 10,
+      "entities_updated": 0,
+      "mode": "automatic"
+    },
+    "exploration": {
+      "last_run": "2024-12-06",
+      "runs_total": 2,
+      "threads_explored": ["thread.saas-futures", "thread.puckcast"],
+      "domains_explored": ["domain.sports-betting-2025", "domain.ai-landscape-2025", "domain.distribution-2025"],
+      "mode": "on-demand"
+    },
+    "synthesis": {
+      "last_run": "2024-12-07",
+      "runs_total": 1,
+      "connections_found": 9,
+      "insights_generated": 3,
+      "mode": "automatic"
+    },
+    "curator": {
+      "last_run": "2024-12-07",
+      "runs_total": 1,
+      "items_archived": 0,
+      "contradictions_flagged": 2,
+      "mode": "periodic"
+    },
+    "analysis": {
+      "last_run": "2024-12-07",
+      "runs_total": 1,
+      "dashboard_generated": true,
+      "automation": "github_actions",
+      "mode": "automated"
+    },
+    "meta": {
+      "last_run": "2024-12-09",
+      "runs_total": 1,
+      "mode": "periodic",
+      "purpose": "system observes itself"
+    }
+  },
+  "human_layer": {
+    "status": "initialized",
+    "last_import": null,
+    "network_populated": false,
+    "profile_populated": false,
+    "files": {
+      "profile": "_brain/human/profile.yaml",
+      "network": "_brain/human/network.yaml",
+      "experience": "_brain/human/experience.yaml",
+      "interactions": "_brain/human/interactions.yaml",
+      "patterns": "_brain/human/patterns.yaml",
+      "goals": "_brain/human/goals.yaml"
+    },
+    "intelligence": {
+      "network_intel": "_brain/human/analysis/network_intel.py",
+      "pattern_detect": "_brain/human/analysis/pattern_detect.py",
+      "goal_alignment": "_brain/human/analysis/goal_alignment.py"
+    },
+    "ingest": {
+      "linkedin": "_brain/human/ingest/linkedin.py"
+    },
+    "next_action": "Import LinkedIn data to populate network"
+  },
+  "pending_attention": [
+    "HUMAN LAYER: Import LinkedIn data to populate network (suggest.004)",
+    "HIVE challenges belief.small-is-underrated (rel.044) — needs exploration",
+    "Consider upgrading belief.distribution-beats-product to grounded (synthesis recommendation)",
+    "thread.puckcast is STALE — needs decision: continue, pivot, or kill",
+    "Calculate actual ROI after vig for Puckcast (rel.026)",
+    "Find examples of mid-size businesses restructured with AI (rel.040)",
+    "Document translation layer businesses that work (rel.041)",
+    "HIVE: Validate campus pipeline and sales cycle (judgment.002)",
+    "HIVE: Clarify revenue model (judgment.002)",
+    "Explore HiveLab engine as separate API product (rel.050)"
+  ],
+  "recent_changes": [
+    "2025-12-09: Full human intelligence layer complete",
+    "2025-12-09: New pattern detection: trust_patterns, energy_patterns, positive_negative_insights, blind_spot_detection",
+    "2025-12-09: Created run_all.py: full report, quick summary, meeting briefs, action items",
+    "2025-12-09: Added positives/negatives, trust, energy to network connections",
+    "2025-12-09: New intelligence: high_trust_connections, energizing_connections, watch_outs, connection_assessment",
+    "2024-12-09: Brain v4.0 — Human layer complete",
+    "2024-12-09: Created _brain/human/ — profile, network, experience, patterns, goals",
+    "2024-12-09: Built LinkedIn ingestion (ingest/linkedin.py)",
+    "2024-12-09: Built network intelligence (analysis/network_intel.py)",
+    "2024-12-09: Built pattern detection (analysis/pattern_detect.py)",
+    "2024-12-09: Built goal alignment (analysis/goal_alignment.py)",
+    "2024-12-09: Updated CLAUDE.md with human layer section",
+    "2024-12-09: Updated agenda with network-aware session hooks",
+    "2024-12-09: Brain v3.0 — proactive architecture complete",
+    "2024-12-09: Created _brain/agenda.yaml — proactive session actions",
+    "2024-12-09: Created _brain/projects/ — codebase context layer",
+    "2024-12-09: Created _brain/protocols/evaluate-codebase.md",
+    "2024-12-09: Created _brain/tools.yaml — personal tool registry",
+    "2024-12-07: Synthesis run 1 — 9 connections, 3 insights, HIVE integrated",
+    "2024-12-07: Curator run 1 — 2 contradictions flagged, health score 83/100",
+    "2024-12-07: First external codebase judgment (codebase.hive)"
+  ],
+  "session_count": 8,
+  "capabilities": {
+    "reasoning_chains": true,
+    "predictions": true,
+    "judgments": true,
+    "metrics_dashboard": true,
+    "github_automation": true,
+    "codebase_analysis": true,
+    "load_bearing_context": true,
+    "automatic_reflection": true,
+    "meta_observation": true,
+    "proactive_agenda": true,
+    "project_context": true,
+    "tool_registry": true,
+    "thread_momentum": true,
+    "real_time_contradiction": true,
+    "codebase_evaluation_protocol": true,
+    "human_layer": true,
+    "network_intelligence": true,
+    "pattern_detection": true,
+    "goal_alignment_analysis": true,
+    "linkedin_ingestion": true,
+    "trust_energy_tracking": true,
+    "connection_assessment": true,
+    "watch_out_alerts": true,
+    "blind_spot_detection": true,
+    "meeting_briefs": true,
+    "full_intelligence_report": true,
+    "action_item_generation": true
+  },
+  "design_principles": {
+    "session_opening": "brain speaks first — surfaces agenda before asking user",
+    "contradiction_handling": "real-time flagging, not deferred to reflection",
+    "context_loading": "embedded in CLAUDE.md + project files for code work",
+    "agenda_ownership": "system drives priorities, user responds",
+    "code_awareness": "project files track decisions, conventions, debt",
+    "prediction_accountability": "falsifiable claims with resolution dates",
+    "tool_hygiene": "track what exists, what's used, what's abandoned",
+    "human_awareness": "brain knows your network, patterns, goals — not just beliefs",
+    "network_proactivity": "surfaces stale relationships and relevant connections"
+  },
+  "stale_threads": ["thread.puckcast"],
+  "upcoming_predictions": {
+    "2025-03": ["pred.hive.001", "pred.hive.003"],
+    "2025-06": ["pred.001", "pred.006", "pred.hive.002"],
+    "2025-12": ["pred.002", "pred.005"]
+  }
+}

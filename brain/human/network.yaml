@@ -1,0 +1,85 @@
+# Network: Your People
+# Connections from LinkedIn + manual enrichment
+# Auto-populated by ingest/linkedin.py, enriched manually
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+source: null  # Will be set to "linkedin_export" after first import
+
+# === CONNECTIONS ===
+
+connections: []
+  # Each connection has this structure:
+  # - id: conn.firstname-lastname
+  #   name: "First Last"
+  #
+  #   # From LinkedIn:
+  #   email: ""  # If available
+  #   company: ""
+  #   position: ""
+  #   connected_date: ""
+  #
+  #   # Calculated from messages:
+  #   relationship_strength: cold|warm|close
+  #   message_count: 0
+  #   last_message: null
+  #
+  #   # Manual enrichment:
+  #   context: ""  # How you met
+  #   domains: []  # What they know about
+  #   can_ask_for: []  # What you could ask them
+  #   has_asked_you: []  # What they've needed from you
+  #   introduces_to: []  # Who they could intro you to
+  #   notes: ""
+  #
+  #   # === POSITIVES & NEGATIVES ===
+  #   # What's great about this person + what to watch for
+  #
+  #   positives: []  # Strengths, superpowers, what makes them valuable
+  #     # - "Incredible at closing deals"
+  #     # - "Deep technical expertise in ML"
+  #     # - "Always follows through"
+  #     # - "Great connector — knows everyone"
+  #     # - "Honest feedback, won't sugarcoat"
+  #
+  #   negatives: []  # Watch-outs, friction points, patterns to be aware of
+  #     # - "Tends to overpromise"
+  #     # - "Can be flaky with timing"
+  #     # - "Gets defensive when challenged"
+  #     # - "Spreads thin across too many projects"
+  #     # - "Talks more than listens"
+  #
+  #   trust_level: null  # How much do you trust this person? high|medium|low|unknown
+  #   energy: null  # How do you feel after talking to them? energizing|neutral|draining
+  #
+  #   # Tracking:
+  #   last_contact: null
+  #   contact_frequency: null  # monthly, quarterly, yearly, never
+
+# === STATS (Auto-computed) ===
+
+stats:
+  total: 0
+  by_relationship:
+    cold: 0
+    warm: 0
+    close: 0
+  by_domain: {}
+  stale_relationships: []  # No contact in 6+ months
+
+# === NETWORK GAPS ===
+
+network_gaps: []
+  # - domain: "distribution"
+  #   have: 2
+  #   need: "more senior operators"
+  #   priority: high
+
+# === IMPORT LOG ===
+
+import_log: []
+  # - date: "2024-12-09"
+  #   source: "linkedin_export"
+  #   connections_added: 0
+  #   connections_updated: 0

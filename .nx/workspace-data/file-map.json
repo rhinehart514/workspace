@@ -1,0 +1,675 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.2.0",
+  "pathMappings": {
+    "@workspace/brain": [
+      "brain/sdk/typescript/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/lockfile-dependencies.hash",
+        "hash": "8392278973670292398"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/2613311530046456308",
+        "hash": "14178050195354834272"
+      },
+      {
+        "file": ".nx/workspace-data/BA2023A2-8D25-5B16-8CF8-42491A35E44D.db",
+        "hash": "6240709564311096908"
+      },
+      {
+        "file": ".nx/cache/run.json",
+        "hash": "6037719326028458101"
+      },
+      {
+        "file": ".nx/workspace-data/BA2023A2-8D25-5B16-8CF8-42491A35E44D.db-wal",
+        "hash": "8922149316590983550"
+      },
+      {
+        "file": "CLAUDE.md",
+        "hash": "2872909978678304015"
+      },
+      {
+        "file": "pyproject.toml",
+        "hash": "848810247601887163"
+      },
+      {
+        "file": ".claude/settings.local.json",
+        "hash": "56840666808866363"
+      },
+      {
+        "file": "nx.json",
+        "hash": "12076032703917379396"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "10407358655019319372"
+      },
+      {
+        "file": ".nx/workspace-data/BA2023A2-8D25-5B16-8CF8-42491A35E44D.db-shm",
+        "hash": "17251484801998786374"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "1427720728865373181"
+      },
+      {
+        "file": ".nx/workspace-data/nx_files.nxt",
+        "hash": "13619129737535414575"
+      },
+      {
+        "file": ".nx/workspace-data/parsed-lock-file.dependencies.json",
+        "hash": "2727114909692093291"
+      },
+      {
+        "file": "package.json",
+        "hash": "7929419248684045849"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7779407301149466975"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "17333922029346940126"
+      },
+      {
+        "file": ".nx/workspace-data/source-maps.json",
+        "hash": "11358998640104926771"
+      }
+    ],
+    "projectFileMap": {
+      "prompts": [
+        {
+          "file": "projects/prompts/.brain.yaml",
+          "hash": "13773934433830886543"
+        },
+        {
+          "file": "projects/prompts/.claude/commands/curate.md",
+          "hash": "2585240148052471727"
+        },
+        {
+          "file": "projects/prompts/.claude/commands/explore.md",
+          "hash": "8914949585707272403"
+        },
+        {
+          "file": "projects/prompts/.claude/commands/reflect.md",
+          "hash": "2475401994373848889"
+        },
+        {
+          "file": "projects/prompts/.claude/commands/synthesize.md",
+          "hash": "5622290267702875777"
+        },
+        {
+          "file": "projects/prompts/.github/workflows/brain-metrics.yml",
+          "hash": "8481733367257090250"
+        },
+        {
+          "file": "projects/prompts/.playwright-mcp/buffalo-explore.png",
+          "hash": "18186160531020113314"
+        },
+        {
+          "file": "projects/prompts/.playwright-mcp/buffalo-home-bottom.png",
+          "hash": "12623532205324990206"
+        },
+        {
+          "file": "projects/prompts/.playwright-mcp/buffalo-home-full.png",
+          "hash": "12175356678037609077"
+        },
+        {
+          "file": "projects/prompts/.playwright-mcp/buffalo-home.png",
+          "hash": "14052353433285251770"
+        },
+        {
+          "file": "projects/prompts/.playwright-mcp/buffalo-project-detail.png",
+          "hash": "9591662200583025892"
+        },
+        {
+          "file": "projects/prompts/CLAUDE.md",
+          "hash": "8403883674771152332"
+        },
+        {
+          "file": "projects/prompts/context/_analysis/__init__.py",
+          "hash": "16164971736133262626"
+        },
+        {
+          "file": "projects/prompts/context/_analysis/metrics.py",
+          "hash": "16453009149960960058"
+        },
+        {
+          "file": "projects/prompts/context/_analysis/parse.py",
+          "hash": "14497575998139512588"
+        },
+        {
+          "file": "projects/prompts/context/_analysis/report.py",
+          "hash": "13316290961008589444"
+        },
+        {
+          "file": "projects/prompts/context/_brain/agenda.yaml",
+          "hash": "15273468454195615631"
+        },
+        {
+          "file": "projects/prompts/context/_brain/agents/curator.md",
+          "hash": "17115465190703371065"
+        },
+        {
+          "file": "projects/prompts/context/_brain/agents/exploration.md",
+          "hash": "16077904623130207221"
+        },
+        {
+          "file": "projects/prompts/context/_brain/agents/reflection.md",
+          "hash": "9978226696046550072"
+        },
+        {
+          "file": "projects/prompts/context/_brain/agents/synthesis.md",
+          "hash": "12932070435597250980"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/analysis/__init__.py",
+          "hash": "1567289826485009097"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/analysis/goal_alignment.py",
+          "hash": "4542269225423503095"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/analysis/network_intel.py",
+          "hash": "1664134874617563932"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/analysis/pattern_detect.py",
+          "hash": "1001829330044243026"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/analysis/run_all.py",
+          "hash": "642572086615621272"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/experience.yaml",
+          "hash": "6744498720462865867"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/goals.yaml",
+          "hash": "8487592673219047157"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/ingest/__init__.py",
+          "hash": "2158123115755556109"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/ingest/linkedin.py",
+          "hash": "4140313622435731716"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/interactions.yaml",
+          "hash": "10590455146014021681"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/network.yaml",
+          "hash": "436918830499245528"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/patterns.yaml",
+          "hash": "10746245932293622944"
+        },
+        {
+          "file": "projects/prompts/context/_brain/human/profile.yaml",
+          "hash": "6955871248252393711"
+        },
+        {
+          "file": "projects/prompts/context/_brain/logs/2024-12-06.md",
+          "hash": "6811939987134263398"
+        },
+        {
+          "file": "projects/prompts/context/_brain/logs/2024-12-07.md",
+          "hash": "14919829755906008319"
+        },
+        {
+          "file": "projects/prompts/context/_brain/projects/_template.yaml",
+          "hash": "11352716995113854997"
+        },
+        {
+          "file": "projects/prompts/context/_brain/projects/context-library.yaml",
+          "hash": "524595056162957247"
+        },
+        {
+          "file": "projects/prompts/context/_brain/projects/hive.yaml",
+          "hash": "4769221153706601625"
+        },
+        {
+          "file": "projects/prompts/context/_brain/protocols/evaluate-codebase.md",
+          "hash": "9191664125124127100"
+        },
+        {
+          "file": "projects/prompts/context/_brain/state.json",
+          "hash": "8694723394176393007"
+        },
+        {
+          "file": "projects/prompts/context/_brain/tools.yaml",
+          "hash": "2919175567145841823"
+        },
+        {
+          "file": "projects/prompts/context/_graph/attention.yaml",
+          "hash": "10560656007614116654"
+        },
+        {
+          "file": "projects/prompts/context/_graph/entities.yaml",
+          "hash": "2622938161422370562"
+        },
+        {
+          "file": "projects/prompts/context/_graph/judgments.yaml",
+          "hash": "13350463792477561139"
+        },
+        {
+          "file": "projects/prompts/context/_graph/predictions.yaml",
+          "hash": "8356642884882301848"
+        },
+        {
+          "file": "projects/prompts/context/_graph/reasoning.yaml",
+          "hash": "14459751621178411053"
+        },
+        {
+          "file": "projects/prompts/context/_graph/relationships.yaml",
+          "hash": "16948637932653394317"
+        },
+        {
+          "file": "projects/prompts/context/_intelligence/emotional-arbitrage.md",
+          "hash": "3315830771160836962"
+        },
+        {
+          "file": "projects/prompts/context/_intelligence/temporal-patterns.md",
+          "hash": "7452896449221027801"
+        },
+        {
+          "file": "projects/prompts/context/_metrics/dashboard.md",
+          "hash": "10070469746148019550"
+        },
+        {
+          "file": "projects/prompts/context/_metrics/history/2025-12-07.json",
+          "hash": "15734232755519377429"
+        },
+        {
+          "file": "projects/prompts/context/domains/_template.md",
+          "hash": "5076110705747446763"
+        },
+        {
+          "file": "projects/prompts/context/domains/ai-landscape-2025.md",
+          "hash": "12645834682233125544"
+        },
+        {
+          "file": "projects/prompts/context/domains/distribution-2025.md",
+          "hash": "9723863743094500019"
+        },
+        {
+          "file": "projects/prompts/context/domains/sports-betting-2025.md",
+          "hash": "8968693268152635862"
+        },
+        {
+          "file": "projects/prompts/context/ideation-protocol.md",
+          "hash": "15472632939125299275"
+        },
+        {
+          "file": "projects/prompts/context/principles/product-thinking.md",
+          "hash": "7945781993651059946"
+        },
+        {
+          "file": "projects/prompts/context/principles/what-to-avoid.md",
+          "hash": "5485828775846512217"
+        },
+        {
+          "file": "projects/prompts/context/reflection.md",
+          "hash": "3644871674180551141"
+        },
+        {
+          "file": "projects/prompts/context/threads/_template.md",
+          "hash": "8030103142946330625"
+        },
+        {
+          "file": "projects/prompts/context/threads/puckcast.md",
+          "hash": "4530136545101533980"
+        },
+        {
+          "file": "projects/prompts/context/threads/saas-futures.md",
+          "hash": "16326549449419861958"
+        },
+        {
+          "file": "projects/prompts/context/vocabulary/terms.md",
+          "hash": "1948485716340505277"
+        },
+        {
+          "file": "projects/prompts/context/worldview/ai-assumptions.md",
+          "hash": "1466755515783824579"
+        },
+        {
+          "file": "projects/prompts/context/worldview/beliefs.md",
+          "hash": "3254981882239490348"
+        },
+        {
+          "file": "projects/prompts/context/worldview/market-shifts.md",
+          "hash": "2638125094446052864"
+        },
+        {
+          "file": "projects/prompts/outputs/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/prompts/project.json",
+          "hash": "2498585813891912711"
+        },
+        {
+          "file": "projects/prompts/prompts/critique.md",
+          "hash": "16379806211521973739"
+        },
+        {
+          "file": "projects/prompts/prompts/ideation.md",
+          "hash": "386266090723523774"
+        },
+        {
+          "file": "projects/prompts/prompts/refinement.md",
+          "hash": "11582930854457719610"
+        }
+      ],
+      "@workspace/brain": [
+        {
+          "file": "brain/sdk/typescript/dist/brain.d.ts",
+          "hash": "8556161063791780316"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/brain.js",
+          "hash": "5807183871052102274"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/brain.js.map",
+          "hash": "6149465357908559535"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/index.d.ts",
+          "hash": "13400210338792685794"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/index.js",
+          "hash": "8045362289453764090",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "brain/sdk/typescript/dist/index.js.map",
+          "hash": "81059756414673743"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/loaders.d.ts",
+          "hash": "3953780540009968874"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/loaders.js",
+          "hash": "12516012268476014589",
+          "deps": [
+            "npm:tslib",
+            "npm:js-yaml"
+          ]
+        },
+        {
+          "file": "brain/sdk/typescript/dist/loaders.js.map",
+          "hash": "3653141101252771906"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/types.d.ts",
+          "hash": "787429765007875596"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/types.js",
+          "hash": "17474986764583437627"
+        },
+        {
+          "file": "brain/sdk/typescript/dist/types.js.map",
+          "hash": "4772052236938169597"
+        },
+        {
+          "file": "brain/sdk/typescript/package.json",
+          "hash": "905578618269246581",
+          "deps": [
+            "npm:@types/js-yaml",
+            "npm:@types/node",
+            "npm:typescript",
+            "npm:js-yaml"
+          ]
+        },
+        {
+          "file": "brain/sdk/typescript/project.json",
+          "hash": "14405806166252469064"
+        },
+        {
+          "file": "brain/sdk/typescript/src/brain.ts",
+          "hash": "17945596121277167301"
+        },
+        {
+          "file": "brain/sdk/typescript/src/index.ts",
+          "hash": "8677229788612851482"
+        },
+        {
+          "file": "brain/sdk/typescript/src/loaders.ts",
+          "hash": "8226974838980222949",
+          "deps": [
+            "npm:js-yaml"
+          ]
+        },
+        {
+          "file": "brain/sdk/typescript/src/types.ts",
+          "hash": "13091840135292660595"
+        },
+        {
+          "file": "brain/sdk/typescript/tsconfig.json",
+          "hash": "13798602371086698278"
+        }
+      ],
+      "brain": [
+        {
+          "file": "brain/agenda.yaml",
+          "hash": "15273468454195615631"
+        },
+        {
+          "file": "brain/agents/curator.md",
+          "hash": "17115465190703371065"
+        },
+        {
+          "file": "brain/agents/exploration.md",
+          "hash": "16077904623130207221"
+        },
+        {
+          "file": "brain/agents/reflection.md",
+          "hash": "9978226696046550072"
+        },
+        {
+          "file": "brain/agents/synthesis.md",
+          "hash": "12932070435597250980"
+        },
+        {
+          "file": "brain/context/domains/_template.md",
+          "hash": "5076110705747446763"
+        },
+        {
+          "file": "brain/context/domains/ai-landscape-2025.md",
+          "hash": "12645834682233125544"
+        },
+        {
+          "file": "brain/context/domains/distribution-2025.md",
+          "hash": "9723863743094500019"
+        },
+        {
+          "file": "brain/context/domains/sports-betting-2025.md",
+          "hash": "8968693268152635862"
+        },
+        {
+          "file": "brain/context/ideation-protocol.md",
+          "hash": "15472632939125299275"
+        },
+        {
+          "file": "brain/context/principles/product-thinking.md",
+          "hash": "7945781993651059946"
+        },
+        {
+          "file": "brain/context/principles/what-to-avoid.md",
+          "hash": "5485828775846512217"
+        },
+        {
+          "file": "brain/context/threads/_template.md",
+          "hash": "8030103142946330625"
+        },
+        {
+          "file": "brain/context/threads/puckcast.md",
+          "hash": "4530136545101533980"
+        },
+        {
+          "file": "brain/context/threads/saas-futures.md",
+          "hash": "16326549449419861958"
+        },
+        {
+          "file": "brain/context/vocabulary/terms.md",
+          "hash": "1948485716340505277"
+        },
+        {
+          "file": "brain/context/worldview/ai-assumptions.md",
+          "hash": "1466755515783824579"
+        },
+        {
+          "file": "brain/context/worldview/beliefs.md",
+          "hash": "3254981882239490348"
+        },
+        {
+          "file": "brain/context/worldview/market-shifts.md",
+          "hash": "2638125094446052864"
+        },
+        {
+          "file": "brain/graph/attention.yaml",
+          "hash": "10560656007614116654"
+        },
+        {
+          "file": "brain/graph/entities.yaml",
+          "hash": "2622938161422370562"
+        },
+        {
+          "file": "brain/graph/judgments.yaml",
+          "hash": "13350463792477561139"
+        },
+        {
+          "file": "brain/graph/predictions.yaml",
+          "hash": "8356642884882301848"
+        },
+        {
+          "file": "brain/graph/reasoning.yaml",
+          "hash": "14459751621178411053"
+        },
+        {
+          "file": "brain/graph/relationships.yaml",
+          "hash": "16948637932653394317"
+        },
+        {
+          "file": "brain/human/analysis/__init__.py",
+          "hash": "1567289826485009097"
+        },
+        {
+          "file": "brain/human/analysis/goal_alignment.py",
+          "hash": "4542269225423503095"
+        },
+        {
+          "file": "brain/human/analysis/network_intel.py",
+          "hash": "1664134874617563932"
+        },
+        {
+          "file": "brain/human/analysis/pattern_detect.py",
+          "hash": "1001829330044243026"
+        },
+        {
+          "file": "brain/human/analysis/run_all.py",
+          "hash": "642572086615621272"
+        },
+        {
+          "file": "brain/human/experience.yaml",
+          "hash": "6744498720462865867"
+        },
+        {
+          "file": "brain/human/goals.yaml",
+          "hash": "8487592673219047157"
+        },
+        {
+          "file": "brain/human/ingest/__init__.py",
+          "hash": "2158123115755556109"
+        },
+        {
+          "file": "brain/human/ingest/linkedin.py",
+          "hash": "4140313622435731716"
+        },
+        {
+          "file": "brain/human/interactions.yaml",
+          "hash": "10590455146014021681"
+        },
+        {
+          "file": "brain/human/network.yaml",
+          "hash": "436918830499245528"
+        },
+        {
+          "file": "brain/human/patterns.yaml",
+          "hash": "10746245932293622944"
+        },
+        {
+          "file": "brain/human/profile.yaml",
+          "hash": "6955871248252393711"
+        },
+        {
+          "file": "brain/project.json",
+          "hash": "10630423226152862656"
+        },
+        {
+          "file": "brain/projects/_template.yaml",
+          "hash": "11352716995113854997"
+        },
+        {
+          "file": "brain/projects/context-library.yaml",
+          "hash": "524595056162957247"
+        },
+        {
+          "file": "brain/projects/hive.yaml",
+          "hash": "4769221153706601625"
+        },
+        {
+          "file": "brain/protocols/evaluate-codebase.md",
+          "hash": "9191664125124127100"
+        },
+        {
+          "file": "brain/sdk/python/brain/__init__.py",
+          "hash": "6551426896307105416"
+        },
+        {
+          "file": "brain/sdk/python/brain/brain.py",
+          "hash": "6418925597074147417"
+        },
+        {
+          "file": "brain/sdk/python/brain/loaders.py",
+          "hash": "406686563647490792"
+        },
+        {
+          "file": "brain/sdk/python/brain/types.py",
+          "hash": "11747054156018718325"
+        },
+        {
+          "file": "brain/sdk/python/pyproject.toml",
+          "hash": "2804089615719325745"
+        },
+        {
+          "file": "brain/state.json",
+          "hash": "8694723394176393007"
+        },
+        {
+          "file": "brain/tools.yaml",
+          "hash": "2919175567145841823"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "1878568560146763655"
+}

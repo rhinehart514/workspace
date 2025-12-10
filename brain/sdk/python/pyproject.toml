@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "brain-sdk"
+version = "1.0.0"
+description = "Brain SDK - Access shared intelligence from any Python project"
+authors = []
+packages = [{include = "brain"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0"
+pydantic = "^2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,88 @@
+# Goals: What You Want vs What You Do
+# Tracks stated goals against revealed preferences
+# Highlights the delta between intention and behavior
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+
+# === STATED GOALS ===
+
+stated:
+  # What you say you want
+  primary: ""
+  secondary: []
+
+  # Time horizon
+  this_week: []
+  this_month: []
+  this_quarter: []
+  this_year: []
+
+  # Long-term
+  north_star: ""
+
+# === REVEALED PREFERENCES ===
+
+revealed:
+  # What your behavior suggests you actually want
+  # (Based on how you spend time, what you prioritize)
+
+  time_allocation:
+    # - activity: ""
+    #   percentage: 0
+    #   aligned_with_stated: true|false
+
+  actual_priorities: []
+    # What you actually work on, not what you say you'll work on
+
+  avoided_actions: []
+    # Actions you say are important but keep not doing
+
+# === THE DELTA ===
+
+delta:
+  # Gaps between stated and revealed
+  misalignments: []
+    # - stated: "Build product X"
+    #   actual: "Keep researching, not building"
+    #   gap: "Execution vs planning"
+    #   possible_reasons:
+    #     - "Fear of failure"
+    #     - "Unclear next step"
+    #     - "Actually not that interested"
+
+# === GOAL-NETWORK FIT ===
+
+network_fit:
+  # Do your connections support your goals?
+
+  supports_goals: []
+    # - goal: "Build distribution"
+    #   relevant_connections: 3
+    #   have_talked_to: 1
+    #   should_talk_to: ["conn.john-smith"]
+
+  gaps: []
+    # - goal: "Enter fintech"
+    #   relevant_connections: 0
+    #   need: "People with fintech experience"
+
+# === ACCOUNTABILITY ===
+
+accountability:
+  # Track whether you're moving toward goals
+
+  check_ins: []
+    # - date: ""
+    #   goal: ""
+    #   progress: none|some|significant
+    #   blockers: []
+    #   next_action: ""
+
+# === META ===
+
+meta:
+  confidence: speculative
+  last_validated: null
+  notes: "Goals should be reviewed weekly"

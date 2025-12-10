@@ -1,0 +1,134 @@
+# Tool Registry
+# Personal tools, scripts, and utilities
+# The brain tracks what exists, what it does, and whether it's actually useful
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+
+# Tool status: active, dormant, abandoned, idea
+# Category: automation, analysis, utility, workflow
+
+tools:
+
+  # === CONTEXT LIBRARY TOOLS ===
+
+  - id: tool.metrics-dashboard
+    name: "Metrics Dashboard Generator"
+    category: automation
+    status: active
+    location: "context/_analysis/"
+    description: "Python module that generates brain health metrics. Auto-runs via GitHub Action on push."
+    last_used: "2024-12-07"
+    actually_useful: true
+    notes: "Part of brain infrastructure. Generates _metrics/dashboard.md"
+
+  - id: tool.github-action-metrics
+    name: "Metrics Update Action"
+    category: automation
+    status: active
+    location: ".github/workflows/"
+    description: "GitHub Action that runs metrics dashboard on push"
+    last_used: "2024-12-07"
+    actually_useful: unknown  # Hasn't been tested much
+    notes: "May need adjustment based on actual usage"
+
+  # === IDEAS ===
+  # Tools that could exist
+
+  - id: tool.prediction-checker
+    name: "Prediction Resolution Checker"
+    category: automation
+    status: idea
+    location: null
+    description: "Script that checks predictions.yaml for items past their check_by date and prompts for resolution"
+    last_used: null
+    actually_useful: null
+    notes: "Would make prediction tracking automatic instead of manual"
+
+  - id: tool.stale-thread-detector
+    name: "Stale Thread Detector"
+    category: automation
+    status: idea
+    location: null
+    description: "Script that checks threads for staleness based on last_touched date"
+    last_used: null
+    actually_useful: null
+    notes: "Would enable proactive thread prodding"
+
+  - id: tool.belief-contradiction-checker
+    name: "Contradiction Scanner"
+    category: analysis
+    status: idea
+    location: null
+    description: "Analyzes session transcripts for statements that contradict existing beliefs"
+    last_used: null
+    actually_useful: null
+    notes: "Would make real-time contradiction detection automatic"
+
+  - id: tool.onboarding-generator
+    name: "Human Layer Onboarding"
+    category: workflow
+    status: idea
+    location: null
+    description: "Interactive script that asks questions to populate a new user's context library"
+    last_used: null
+    actually_useful: null
+    notes: "Key for Level 2 (transferable infrastructure)"
+
+# === EXTERNAL TOOLS ===
+# Tools you use that aren't in this repo
+
+external:
+
+  - id: ext.claude-code
+    name: "Claude Code"
+    description: "CLI for Claude. Primary interface for brain interaction."
+    actually_useful: true
+
+  - id: ext.cursor
+    name: "Cursor"
+    description: "AI code editor"
+    actually_useful: true
+
+# === TRACKING ===
+
+tracking:
+  total: 6
+  active: 2
+  dormant: 0
+  abandoned: 0
+  ideas: 4
+
+  needs_building:
+    - tool.prediction-checker
+    - tool.stale-thread-detector
+
+  needs_evaluation:
+    - tool.github-action-metrics
+
+# === META ===
+
+meta:
+  purpose: |
+    Track personal tools so the brain knows:
+    - What automation exists
+    - What's actually being used vs abandoned
+    - What gaps exist (ideas that should become tools)
+
+  maintenance: |
+    Review quarterly:
+    - Dormant tools → abandon or revive?
+    - Ideas → build or drop?
+    - Active tools → still useful?
+
+  criteria: |
+    A tool is worth keeping if:
+    - Used at least monthly
+    - Saves meaningful time/effort
+    - Works reliably
+
+    A tool should be abandoned if:
+    - Not used in 3+ months
+    - Takes more time to maintain than it saves
+    - Superseded by something better

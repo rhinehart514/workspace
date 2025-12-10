@@ -1,0 +1,66 @@
+# Experience: Your Background
+# Work history, skills, education
+# Auto-populated from LinkedIn, enriched manually
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+source: null  # Will be set to "linkedin_export" after first import
+
+# === ROLES ===
+
+roles: []
+  # Each role has this structure:
+  # - company: ""
+  #   title: ""
+  #   start_date: ""
+  #   end_date: ""  # null if current
+  #   domain: ""
+  #
+  #   # What actually matters (manual):
+  #   learned: []      # Real lessons
+  #   built: []        # What you shipped
+  #   failed_at: []    # What didn't work
+  #   relationships: []  # People from this role (links to network)
+
+# === SKILLS ===
+
+skills:
+  # From LinkedIn endorsements:
+  linkedin: []
+
+  # Manual categorization:
+  technical: []
+  domain: []
+  soft: []
+
+  # Honest assessment:
+  strong: []      # Actually good at these
+  developing: []  # Working on these
+  gaps: []        # Things you know you don't know
+  overrated: []   # Skills you have that aren't as useful as you thought
+
+# === EDUCATION ===
+
+education:
+  formal: []
+    # - institution: ""
+    #   degree: ""
+    #   field: ""
+    #   year: ""
+
+  self_taught: []
+    # - topic: ""
+    #   depth: surface|working|deep
+    #   source: ""  # books, courses, projects
+
+  learning_now: []
+    # - topic: ""
+    #   why: ""
+    #   started: ""
+
+# === META ===
+
+meta:
+  confidence: speculative
+  last_validated: null

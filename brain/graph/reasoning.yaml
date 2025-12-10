@@ -1,0 +1,308 @@
+# Reasoning Chains
+# Captures HOW conclusions are reached, not just WHAT is believed
+# Every chain is an attack surface — vulnerabilities are explicit
+
+version: "1.0"
+created: "2024-12-07"
+last_updated: "2024-12-07"
+
+# Chain structure:
+# - Each step has a type: premise, observation, inference, conclusion
+# - Each step has confidence independent of the chain
+# - Vulnerabilities are explicit weak points
+# - Predictions make chains falsifiable
+
+chains:
+
+  # === CONTEXT IS MOAT ===
+
+  - id: chain.001
+    conclusion: belief.context-is-moat
+    summary: "Context accumulation creates defensibility in AI products"
+    steps:
+      - step: 1
+        claim: "Switching costs increase with accumulated context"
+        type: premise
+        confidence: grounded
+        evidence: "Standard switching cost economics"
+
+      - step: 2
+        claim: "AI products can accumulate context faster than traditional software"
+        type: observation
+        confidence: tentative
+        evidence: "LLMs can ingest and structure information quickly"
+        depends_on: []
+
+      - step: 3
+        claim: "Users underinvest in products that accumulate context for them"
+        type: observation
+        confidence: tentative
+        evidence: "Most AI products are thin wrappers, don't build context"
+        depends_on: []
+
+      - step: 4
+        claim: "Context moats form quickly in AI-native products"
+        type: inference
+        confidence: tentative
+        depends_on: [1, 2]
+
+      - step: 5
+        claim: "Building context accumulation is a defensible strategy"
+        type: conclusion
+        confidence: tentative
+        depends_on: [3, 4]
+
+    vulnerabilities:
+      - id: vuln.001.1
+        weakness: "Context may become portable"
+        severity: high
+        evidence: "insight.portable-vs-defensible-context — code completion tools show context (codebase) is portable"
+        status: active
+
+      - id: vuln.001.2
+        weakness: "Users may not value accumulated context"
+        severity: medium
+        evidence: "Many users prefer fresh starts to loaded history"
+        status: untested
+
+      - id: vuln.001.3
+        weakness: "Context moat requires ongoing use"
+        severity: medium
+        evidence: "Unlike network effects, context moats decay without activity"
+        status: untested
+
+    predictions:
+      - id: pred.001
+        statement: "Products with deep context will have >2x retention vs thin wrappers"
+        testable_by: "2025-06"
+        confidence: tentative
+        status: pending
+
+      - id: pred.002
+        statement: "At least one major AI product will differentiate primarily on context by end of 2025"
+        testable_by: "2025-12"
+        confidence: tentative
+        status: pending
+
+  # === DISTRIBUTION BEATS PRODUCT ===
+
+  - id: chain.002
+    conclusion: belief.distribution-beats-product
+    summary: "Access to customers matters more than product quality"
+    steps:
+      - step: 1
+        claim: "Awareness precedes purchase"
+        type: premise
+        confidence: hardened
+        evidence: "Definitional — can't buy what you don't know exists"
+
+      - step: 2
+        claim: "Product quality has diminishing returns on conversion"
+        type: observation
+        confidence: tentative
+        evidence: "B2B sales research shows relationship/trust often trumps features"
+
+      - step: 3
+        claim: "Distribution compounds; product improvements are linear"
+        type: inference
+        confidence: tentative
+        depends_on: [1]
+        evidence: "Network effects in distribution vs incremental product gains"
+
+      - step: 4
+        claim: "Mediocre product + great distribution beats great product + no distribution"
+        type: conclusion
+        confidence: tentative
+        depends_on: [1, 2, 3]
+
+    vulnerabilities:
+      - id: vuln.002.1
+        weakness: "AI may invert this by making distribution cheap"
+        severity: high
+        evidence: "If AI generates personalized outreach at scale, distribution advantage shrinks"
+        status: active
+
+      - id: vuln.002.2
+        weakness: "Product-led growth is a counter-pattern"
+        severity: medium
+        evidence: "Notion, Figma grew through product quality spreading organically"
+        status: acknowledged
+
+      - id: vuln.002.3
+        weakness: "Only applies to existing categories"
+        severity: low
+        evidence: "New categories may require product to define the market"
+        status: acknowledged
+
+    predictions:
+      - id: pred.003
+        statement: "Most successful AI startups of 2025 will have distribution advantage, not model advantage"
+        testable_by: "2026-01"
+        confidence: tentative
+        status: pending
+
+  # === MIDDLE RESTRUCTURES ===
+
+  - id: chain.003
+    conclusion: belief.middle-restructures
+    summary: "Mid-market businesses don't disappear, they get leaner"
+    steps:
+      - step: 1
+        claim: "AI reduces labor costs for knowledge work"
+        type: premise
+        confidence: grounded
+        evidence: "Observable in content, code, analysis, customer service"
+
+      - step: 2
+        claim: "Mid-size businesses exist because of specific market needs"
+        type: observation
+        confidence: grounded
+        evidence: "They serve niches too small for giants, too complex for solo operators"
+
+      - step: 3
+        claim: "Market needs don't disappear when labor costs drop"
+        type: inference
+        confidence: grounded
+        depends_on: [2]
+
+      - step: 4
+        claim: "Businesses that survive will do same revenue with fewer people"
+        type: inference
+        confidence: tentative
+        depends_on: [1, 3]
+
+      - step: 5
+        claim: "The middle restructures rather than disappears"
+        type: conclusion
+        confidence: tentative
+        depends_on: [4]
+
+    vulnerabilities:
+      - id: vuln.003.1
+        weakness: "Platforms may absorb mid-market niches"
+        severity: medium
+        evidence: "Amazon/Shopify have squeezed many mid-size retailers"
+        status: active
+
+      - id: vuln.003.2
+        weakness: "Revenue-per-employee gains may lag"
+        severity: medium
+        evidence: "Adoption curves are slow; restructuring takes years"
+        status: untested
+
+      - id: vuln.003.3
+        weakness: "May only apply to certain sectors"
+        severity: low
+        evidence: "Physical services vs knowledge work may diverge"
+        status: untested
+
+    predictions:
+      - id: pred.004
+        statement: "Average employee count at $5-50M revenue companies will drop 20%+ by 2027"
+        testable_by: "2027-06"
+        confidence: speculative
+        status: pending
+
+      - id: pred.005
+        statement: "At least 3 'AI-native' mid-market service firms will be documented making $5M+ with <10 people by 2025"
+        testable_by: "2025-12"
+        confidence: tentative
+        status: pending
+
+  # === SINGLE WORKFLOW CONTEXT FLYWHEEL ===
+
+  - id: chain.004
+    conclusion: pattern.single-workflow-context-flywheel
+    summary: "Smallest viable AI business: one workflow that gets better through use"
+    steps:
+      - step: 1
+        claim: "Context accumulation creates moat"
+        type: premise
+        confidence: tentative
+        depends_on_chain: chain.001
+
+      - step: 2
+        claim: "Platforms serve horizontal needs; verticals are underserved"
+        type: observation
+        confidence: grounded
+        evidence: "Big AI tools are general; specific workflows require customization"
+
+      - step: 3
+        claim: "Single-workflow focus is buildable by one person"
+        type: observation
+        confidence: grounded
+        evidence: "Scope determines team size"
+
+      - step: 4
+        claim: "Distribution can happen through the workflow itself"
+        type: observation
+        confidence: tentative
+        evidence: "Tools that produce shareable outputs spread organically"
+
+      - step: 5
+        claim: "Minimum viable AI business = one workflow + context flywheel"
+        type: conclusion
+        confidence: tentative
+        depends_on: [1, 2, 3, 4]
+
+    vulnerabilities:
+      - id: vuln.004.1
+        weakness: "Workflow may be too narrow to sustain a business"
+        severity: medium
+        evidence: "Some workflows are features, not products"
+        status: active
+
+      - id: vuln.004.2
+        weakness: "Relies on chain.001 which has high-severity vulnerability"
+        severity: high
+        evidence: "If context-is-moat fails, flywheel doesn't spin"
+        status: inherited
+
+    predictions:
+      - id: pred.006
+        statement: "We will identify at least 3 successful single-workflow AI businesses by mid-2025"
+        testable_by: "2025-06"
+        confidence: tentative
+        status: pending
+
+# === CHAIN DEPENDENCIES ===
+# Visual map of how chains relate
+
+dependencies:
+  chain.004:
+    relies_on: [chain.001]
+    note: "Flywheel pattern depends on context-moat belief"
+    risk: "If context-moat is invalidated, flywheel pattern needs revision"
+
+# === PREDICTION TRACKING ===
+# Summary of all predictions for easy checking
+
+prediction_summary:
+  total: 6
+  pending: 6
+  confirmed: 0
+  failed: 0
+  next_checkable:
+    - pred.001: "2025-06"
+    - pred.006: "2025-06"
+
+# === META ===
+
+meta:
+  purpose: |
+    Reasoning chains make beliefs attackable. Every conclusion has a path.
+    Paths can be challenged at any step. Predictions make chains falsifiable.
+    This is how confidence should move — based on which chain steps survive.
+
+  usage: |
+    - When exploring a belief, trace its chain
+    - When finding counter-evidence, target specific vulnerabilities
+    - When predictions resolve, update chain confidence
+    - When chains break, flag for revision
+
+  evolution: |
+    Chains should grow as understanding deepens:
+    - New evidence strengthens or weakens steps
+    - New vulnerabilities get discovered
+    - Predictions get resolved
+    - Broken chains get marked, not deleted

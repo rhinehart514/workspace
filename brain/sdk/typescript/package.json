@@ -1,0 +1,19 @@
+{
+  "name": "@workspace/brain",
+  "version": "1.0.0",
+  "description": "Brain SDK - Access shared intelligence from any project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo 'No tests yet'"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3"
+  }
+}

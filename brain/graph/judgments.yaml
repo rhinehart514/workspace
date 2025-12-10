@@ -1,0 +1,176 @@
+# Judgments Registry
+# Formal opinions rendered on specific targets
+# Created explicitly via /judge command — not every exploration becomes a judgment
+
+version: "1.0"
+created: "2024-12-07"
+last_updated: "2024-12-07"
+
+# Judgment structure:
+# - target: what was evaluated
+# - stance: overall position (bullish, skeptical, neutral, bearish, uncertain)
+# - tangible_qualities: concrete findings (the point of judgment)
+# - unresolved: what couldn't be determined
+# - frameworks_used: which beliefs/principles drove the judgment
+# - outcome: filled in later when reality reveals if judgment was correct
+
+judgments:
+
+  - id: judgment.001
+    target: thread.puckcast
+    target_type: thread
+    date: "2024-12-06"
+    context: "Evaluated NHL prediction product claiming 60% accuracy"
+
+    stance: skeptical
+    stance_confidence: tentative
+
+    tangible_qualities:
+      - id: tq.001.1
+        quality: "accuracy-vs-vig gap"
+        finding: "60% accuracy sounds impressive but sportsbooks take ~5% vig. Need 52.4% just to break even. Real metric is ROI after vig, not raw accuracy."
+        significance: high
+
+      - id: tq.001.2
+        quality: "distribution timing problem"
+        finding: "Prediction products must reach users before they bet. No clear distribution strategy = predictions never seen in time."
+        significance: high
+
+      - id: tq.001.3
+        quality: "niche paradox"
+        finding: "NHL is niche within niche (smaller than NFL/NBA). Could mean less competition OR limited TAM. Must pick one framing and commit."
+        significance: medium
+
+      - id: tq.001.4
+        quality: "context flywheel absence"
+        finding: "Product doesn't accumulate context through use. Each prediction is independent. No moat building."
+        significance: high
+
+    unresolved:
+      - "Community/identity angle not explored — could the real product be belonging, not predictions?"
+      - "B2B pivot not evaluated — selling data to sportsbooks rather than consumers?"
+      - "Actual ROI after vig not calculated — would change skepticism if positive"
+
+    frameworks_used:
+      - belief.distribution-beats-product
+      - belief.context-is-moat
+      - principle.structural-advantage
+      - principle.clear-value-capture
+      - pattern.single-workflow-context-flywheel
+
+    outcome:
+      status: pending  # pending, confirmed, refuted, partially_correct
+      resolution_date: null
+      notes: null
+      learned: null
+
+  - id: judgment.002
+    target: codebase.hive
+    target_type: codebase
+    date: "2024-12-07"
+    context: "First external codebase analysis. HIVE is a multi-tenant campus platform with HiveLab (visual tool builder with AI assist)."
+
+    stance: cautiously-optimistic
+    stance_confidence: tentative
+
+    tangible_qualities:
+      - id: tq.002.1
+        quality: "context accumulation (real)"
+        finding: "ContextRetrieverService implements RAG with Firestore vector search. Embeds successful generations, retrieves similar ones for few-shot learning. Actual context flywheel, not storage."
+        significance: high
+
+      - id: tq.002.2
+        quality: "AI as copilot, not core"
+        finding: "Cursor for Visual Tools positioning. Users can drag-drop manually; AI is Cmd+K assist. Doesn't depend on brittle agents."
+        significance: high
+
+      - id: tq.002.3
+        quality: "built-in distribution"
+        finding: "B2B2C campus model. Sell to university → captive audience. Space leaders create tools for spaces. Distribution is structural."
+        significance: high
+
+      - id: tq.002.4
+        quality: "architectural discipline"
+        finding: "DDD bounded contexts, monorepo with clean package boundaries, 14 E2E test files, quality gates for AI generation."
+        significance: medium
+
+      - id: tq.002.5
+        quality: "platform ambition (risk)"
+        finding: "3 apps, 12 packages, 27 element types, 400+ spaces. Not a wedge — a platform bet. Risk of scope killing velocity."
+        significance: medium
+
+    unresolved:
+      - "Campus pipeline unknown — how many signed vs piloting?"
+      - "Team size vs scope mismatch risk"
+      - "Revenue model not validated — per-campus SaaS? Usage-based?"
+      - "Founder-market fit for campus vertical"
+
+    frameworks_used:
+      - belief.context-is-moat
+      - belief.distribution-beats-product
+      - belief.small-is-underrated
+      - principle.ai-load-bearing
+      - antipattern.thin-wrappers
+
+    outcome:
+      status: pending
+      resolution_date: null
+      notes: null
+      learned: null
+
+    predictions:
+      - id: pred.hive.001
+        statement: "HiveLab's RAG context will measurably improve generation quality by Q1 2025"
+        check_by: "2025-03"
+        confidence: tentative
+
+      - id: pred.hive.002
+        statement: "Campus sales cycle will be >3 months average"
+        check_by: "2025-06"
+        confidence: grounded
+
+      - id: pred.hive.003
+        statement: "Platform complexity will force scope cuts before full launch"
+        check_by: "2025-03"
+        confidence: tentative
+
+# === SUMMARY STATS ===
+
+stats:
+  total_judgments: 2
+  by_stance:
+    bullish: 0
+    cautiously-optimistic: 1
+    skeptical: 1
+    neutral: 0
+    bearish: 0
+    uncertain: 0
+  outcomes:
+    pending: 2
+    confirmed: 0
+    refuted: 0
+    partially_correct: 0
+
+# === META ===
+
+meta:
+  purpose: |
+    Judgments are formal opinions. Not every exploration becomes one.
+    The point is to find tangible qualities in ambiguous things —
+    to turn "interesting" into "has X, lacks Y, depends on Z."
+
+    Tracking outcomes over time reveals:
+    - Is the brain's judgment improving?
+    - Which frameworks lead to correct calls?
+    - Where is the brain overconfident?
+
+  trigger: |
+    Judgments are created via /judge [target] command.
+    This ensures deliberate evaluation, not casual exploration.
+
+  quality_criteria: |
+    A good judgment:
+    - Finds at least 2-3 tangible qualities
+    - Acknowledges what couldn't be resolved
+    - References specific frameworks used
+    - Takes a stance (even if uncertain)

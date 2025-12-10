@@ -1,0 +1,485 @@
+# Relationship Registry
+# Tracks typed connections between entities
+
+version: "1.0"
+last_updated: "2024-12-06"
+
+# Relationship types:
+# - supports: One concept reinforces another
+# - contradicts: Concepts are in tension
+# - specializes: One is a specific case of another
+# - requires: One depends on another being true
+# - suggests: One concept implies another worth exploring
+# - validates: Evidence that confirms a belief
+# - challenges: Evidence that questions a belief
+
+relationships:
+
+  # === SUPPORTING RELATIONSHIPS ===
+
+  - id: rel.001
+    type: supports
+    from: belief.small-is-underrated
+    to: antipattern.premature-scaling
+    strength: strong
+    notes: "If small is underrated, then scaling prematurely is the opposite error"
+    created: "2024-12-06"
+
+  - id: rel.002
+    type: supports
+    from: belief.infrastructure-procrastination
+    to: antipattern.complexity-theater
+    strength: strong
+    notes: "Both point to building systems that don't serve real needs"
+    created: "2024-12-06"
+
+  - id: rel.003
+    type: supports
+    from: belief.ai-powered-meaningless
+    to: antipattern.ai-decoration
+    strength: strong
+    notes: "If AI-powered is meaningless, decorative AI is worse"
+    created: "2024-12-06"
+
+  - id: rel.004
+    type: supports
+    from: belief.context-is-moat
+    to: term.context-moat
+    strength: strong
+    notes: "Belief that context is defensible supports the term definition"
+    created: "2024-12-06"
+
+  - id: rel.005
+    type: supports
+    from: belief.writing-clarifies
+    to: belief.taste-is-learnable
+    strength: moderate
+    notes: "Writing as clarification tool supports developing taste through practice"
+    created: "2024-12-06"
+
+  - id: rel.006
+    type: supports
+    from: term.capability-compression
+    to: thread.saas-futures
+    strength: strong
+    notes: "Capability compression is a key driver of the SaaS futures question"
+    created: "2024-12-06"
+
+  - id: rel.007
+    type: supports
+    from: belief.distribution-beats-product
+    to: principle.structural-advantage
+    strength: moderate
+    notes: "Distribution can be a structural advantage"
+    created: "2024-12-06"
+
+  - id: rel.008
+    type: supports
+    from: principle.ai-load-bearing
+    to: antipattern.ai-decoration
+    strength: strong
+    notes: "If AI should be load-bearing, decoration is the failure mode"
+    created: "2024-12-06"
+
+  # === TENSION RELATIONSHIPS ===
+
+  - id: rel.009
+    type: contradicts
+    from: belief.speed-matters
+    to: belief.small-is-underrated
+    strength: weak
+    status: unresolved
+    notes: "Potential tension: speed can push toward bigger scope. May not be real contradiction."
+    created: "2024-12-06"
+
+  - id: rel.010
+    type: contradicts
+    from: belief.optionality-cost
+    to: belief.small-is-underrated
+    strength: weak
+    status: unresolved
+    notes: "Small scope preserves optionality, but optionality has costs. Needs exploration."
+    created: "2024-12-06"
+
+  # === SPECIALIZATION RELATIONSHIPS ===
+
+  - id: rel.011
+    type: specializes
+    from: term.thin-wrapper
+    to: antipattern.thin-wrappers
+    strength: strong
+    notes: "Term is the concept, antipattern is the application"
+    created: "2024-12-06"
+
+  - id: rel.012
+    type: specializes
+    from: term.context-engineering
+    to: belief.context-is-moat
+    strength: moderate
+    notes: "Context engineering is how you build a context moat"
+    created: "2024-12-06"
+
+  # === SUGGESTION RELATIONSHIPS ===
+
+  - id: rel.013
+    type: suggests
+    from: thread.saas-futures
+    to: null
+    strength: strong
+    suggestion: "Explore outcome-based pricing models"
+    status: unexplored
+    created: "2024-12-06"
+
+  - id: rel.014
+    type: suggests
+    from: belief.agents-timing
+    to: null
+    strength: moderate
+    suggestion: "Track agent reliability improvements over time"
+    status: unexplored
+    created: "2024-12-06"
+
+  - id: rel.015
+    type: suggests
+    from: belief.context-is-moat
+    to: null
+    strength: strong
+    suggestion: "Find examples of context moats failing"
+    status: unexplored
+    created: "2024-12-06"
+
+  - id: rel.016
+    type: suggests
+    from: belief.b2b-underrated
+    to: null
+    strength: moderate
+    suggestion: "Document B2B vs consumer dynamics for AI products"
+    status: unexplored
+    created: "2024-12-06"
+
+  # === RELATIONSHIPS FROM EXPLORATION 2024-12-06 ===
+
+  - id: rel.017
+    type: supports
+    from: pattern.single-workflow-context-flywheel
+    to: belief.small-is-underrated
+    strength: strong
+    notes: "Pattern embodies small-is-underrated: one workflow, not platform"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.018
+    type: supports
+    from: pattern.single-workflow-context-flywheel
+    to: belief.context-is-moat
+    strength: strong
+    notes: "Pattern depends on context accumulation as moat"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.019
+    type: challenges
+    from: insight.portable-vs-defensible-context
+    to: belief.context-is-moat
+    strength: moderate
+    notes: "Code completion shows context doesn't always create moat — adds nuance"
+    status: flagged_for_review
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.020
+    type: suggests
+    from: insight.portable-vs-defensible-context
+    to: null
+    strength: strong
+    suggestion: "Define criteria for defensible vs portable context"
+    status: unexplored
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.021
+    type: suggests
+    from: thread.saas-futures
+    to: null
+    strength: medium
+    suggestion: "Find examples of solo-built AI products that reached profitability"
+    status: unexplored
+    created: "2024-12-06"
+    source: exploration_agent
+
+  # === PUCKCAST RELATIONSHIPS (from exploration 2024-12-06) ===
+
+  - id: rel.022
+    type: validates
+    from: thread.puckcast
+    to: belief.distribution-beats-product
+    strength: strong
+    notes: "Puckcast analysis shows product (accuracy) without distribution strategy is vulnerable"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.023
+    type: validates
+    from: insight.prediction-distribution-gap
+    to: belief.distribution-beats-product
+    strength: strong
+    notes: "Timing problem for predictions directly demonstrates distribution primacy"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.024
+    type: validates
+    from: thread.puckcast
+    to: belief.markets-smaller
+    strength: moderate
+    notes: "NHL is niche within sports betting — addressable market smaller than it looks"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.025
+    type: challenges
+    from: thread.puckcast
+    to: pattern.single-workflow-context-flywheel
+    strength: moderate
+    notes: "Puckcast lacks context flywheel — predictions don't accumulate user-specific value"
+    status: flagged_for_review
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.026
+    type: suggests
+    from: insight.accuracy-vs-vig
+    to: null
+    strength: strong
+    suggestion: "Calculate actual ROI after vig for Puckcast historical predictions"
+    status: unexplored
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.027
+    type: suggests
+    from: thread.puckcast
+    to: null
+    strength: moderate
+    suggestion: "Explore B2B pivot: who would pay for NHL prediction data?"
+    status: unexplored
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.028
+    type: suggests
+    from: thread.puckcast
+    to: null
+    strength: moderate
+    suggestion: "Design community-first approach where predictions are hook, not product"
+    status: unexplored
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.029
+    type: supports
+    from: insight.nhl-niche-paradox
+    to: belief.small-is-underrated
+    strength: weak
+    notes: "If niche = less competition, supports small-is-underrated thesis"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.030
+    type: supports
+    from: domain.sports-betting-2025
+    to: thread.puckcast
+    strength: strong
+    notes: "Market research grounds Puckcast evaluation in reality"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  - id: rel.031
+    type: supports
+    from: domain.distribution-2025
+    to: insight.prediction-distribution-gap
+    strength: strong
+    notes: "Distribution research confirms timing and channel selection critical"
+    created: "2024-12-06"
+    source: exploration_agent
+
+  # === RELATIONSHIPS FROM 2024-12-07 REFLECTION ===
+
+  - id: rel.032
+    type: challenges
+    from: belief.middle-restructures
+    to: term.barbell-economy
+    strength: moderate
+    notes: "Belief argues barbell thesis is too simple, middle restructures rather than disappears"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.033
+    type: supports
+    from: belief.middle-restructures
+    to: belief.small-is-underrated
+    strength: moderate
+    notes: "Middle shrinking supports small-is-underrated as leaner teams emerge"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.034
+    type: supports
+    from: belief.local-physical-premium
+    to: belief.distribution-beats-product
+    strength: moderate
+    notes: "Physical presence is a form of distribution moat"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.035
+    type: supports
+    from: belief.leverage-adoption-niche
+    to: belief.speed-matters
+    strength: strong
+    notes: "Fast AI adoption as survival factor supports speed-matters"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.036
+    type: supports
+    from: belief.leverage-adoption-niche
+    to: principle.structural-advantage
+    strength: strong
+    notes: "Niche defensibility is a structural advantage"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.037
+    type: supports
+    from: term.ai-native-micro-corp
+    to: belief.small-is-underrated
+    strength: strong
+    notes: "Micro-corps exemplify small-is-underrated with high leverage"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.038
+    type: supports
+    from: term.translation-layer-business
+    to: pattern.viable-niche-formula
+    strength: strong
+    notes: "Translation layer is an example of viable niche pattern"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.039
+    type: supports
+    from: pattern.viable-niche-formula
+    to: belief.b2b-underrated
+    strength: moderate
+    notes: "Most viable niches are B2B relationships"
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.040
+    type: suggests
+    from: belief.middle-restructures
+    to: null
+    strength: strong
+    suggestion: "Find examples of mid-size businesses that successfully restructured with AI"
+    status: unexplored
+    created: "2024-12-07"
+    source: reflection_agent
+
+  - id: rel.041
+    type: suggests
+    from: term.translation-layer-business
+    to: null
+    strength: medium
+    suggestion: "Document specific translation layer businesses that are working"
+    status: unexplored
+    created: "2024-12-07"
+    source: reflection_agent
+
+  # === HIVE CODEBASE CONNECTIONS (from synthesis 2024-12-07) ===
+
+  - id: rel.042
+    type: validates
+    from: codebase.hive
+    to: belief.context-is-moat
+    strength: strong
+    notes: "HIVE's RAG system demonstrates real context accumulation — not just storage, but learning from successful generations"
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  - id: rel.043
+    type: validates
+    from: codebase.hive
+    to: belief.distribution-beats-product
+    strength: strong
+    notes: "Campus B2B2C model is structural distribution — sell to institution, reach captive users"
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  - id: rel.044
+    type: challenges
+    from: codebase.hive
+    to: belief.small-is-underrated
+    strength: moderate
+    notes: "HIVE is platform-scale (3 apps, 12 packages, 27 element types) — not small. Tension with core belief."
+    status: flagged_for_review
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  - id: rel.045
+    type: validates
+    from: codebase.hive
+    to: principle.ai-load-bearing
+    strength: strong
+    notes: "AI is copilot (Cmd+K assist) not core. Users can drag-drop manually. AI enhances, doesn't break without it."
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  - id: rel.046
+    type: validates
+    from: codebase.hive
+    to: antipattern.thin-wrappers
+    strength: strong
+    notes: "HIVE is explicitly NOT a thin wrapper — has RAG, element system, quality gates, persistence. Real product."
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  - id: rel.047
+    type: supports
+    from: observation.institutional-distribution
+    to: belief.distribution-beats-product
+    strength: strong
+    notes: "Institutional distribution is slow but sticky — validates distribution primacy for B2B2C"
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  - id: rel.048
+    type: supports
+    from: insight.engine-vs-wrapper
+    to: pattern.viable-niche-formula
+    strength: moderate
+    notes: "Engine licensing could be a viable niche formula — specific vertical, ongoing relationship, accountability"
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  # === SYNTHESIZED PATTERN CONNECTIONS ===
+
+  - id: rel.049
+    type: supports
+    from: insight.portable-vs-defensible-context
+    to: codebase.hive
+    strength: strong
+    notes: "HIVE's context is generated through use (few-shot learning from successful generations) — defensible, not portable"
+    created: "2024-12-07"
+    source: synthesis_agent
+
+  - id: rel.050
+    type: suggests
+    from: codebase.hive
+    to: null
+    strength: strong
+    suggestion: "Explore HiveLab engine as separate API product — could be wedge for non-campus markets"
+    status: unexplored
+    created: "2024-12-07"
+    source: synthesis_agent

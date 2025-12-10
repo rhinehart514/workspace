@@ -1,0 +1,112 @@
+# Project Context Template
+# Copy this for each project you're actively working on
+# The brain loads relevant project context when you're working in that codebase
+
+# === IDENTITY ===
+
+project:
+  name: ""  # Human name
+  id: ""    # project.kebab-case
+  path: ""  # Local path to codebase
+  repo: ""  # GitHub URL if applicable
+  status: active  # active, paused, archived, evaluating
+
+# === PURPOSE ===
+
+purpose:
+  one_liner: ""  # What is this in one sentence?
+  thread: null   # Link to context library thread if exists
+
+  # Why does this exist?
+  problem: ""
+  for_whom: ""
+
+  # What makes it defensible?
+  moat_type: null  # context, distribution, network, expertise, none
+  moat_notes: ""
+
+# === DECISIONS ===
+# Key architectural/product decisions and WHY
+# This is the institutional memory for the project
+
+decisions:
+  # - id: decision.001
+  #   date: ""
+  #   what: ""
+  #   why: ""
+  #   alternatives_considered: []
+  #   revisit_if: ""  # Conditions that would change this
+
+# === CONVENTIONS ===
+# Patterns established in this codebase
+# So the brain writes code that fits
+
+conventions:
+  language: ""
+  framework: ""
+
+  patterns: []
+    # - name: ""
+    #   description: ""
+    #   example_file: ""
+
+  naming: {}
+    # files: ""
+    # components: ""
+    # functions: ""
+    # variables: ""
+
+  structure: {}
+    # Where things go
+    # src/components: "React components"
+    # src/lib: "Utilities"
+
+# === DEBT ===
+# Known problems, ugly code, things to fix
+# So the brain knows what's broken
+
+debt:
+  # - id: debt.001
+  #   location: ""
+  #   description: ""
+  #   severity: low|medium|high|critical
+  #   blocked_by: ""  # Why hasn't this been fixed?
+
+# === CURRENT STATE ===
+
+state:
+  last_worked: ""  # Date
+  current_focus: ""  # What are you working on right now?
+  blocked_on: []  # What's preventing progress?
+  next_actions: []  # Immediate next steps
+
+# === METRICS ===
+# If applicable
+
+metrics:
+  users: null
+  revenue: null
+  key_metric: null
+  key_metric_value: null
+
+# === EVALUATION ===
+# Brain's assessment of this project against beliefs/principles
+
+evaluation:
+  judgment_id: null  # Link to formal judgment if exists
+
+  checks:
+    real_problem: null  # true/false/unclear
+    structural_advantage: null
+    clear_value_capture: null
+    ai_load_bearing: null  # If AI is involved
+
+  concerns: []
+  strengths: []
+
+# === META ===
+
+meta:
+  created: ""
+  last_updated: ""
+  sessions: 0  # How many times has the brain worked on this?

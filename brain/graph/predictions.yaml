@@ -1,0 +1,170 @@
+# Predictions Registry
+# Falsifiable claims that make the brain accountable to reality
+# Predictions force honest confidence — if you believe something, bet on it
+
+version: "1.0"
+created: "2024-12-07"
+last_updated: "2024-12-07"
+
+# Prediction structure:
+# - statement: the falsifiable claim
+# - source: where this prediction comes from (chain, judgment, session)
+# - confidence: how sure the brain is
+# - check_by: when to evaluate
+# - outcome: what actually happened
+
+predictions:
+
+  # === FROM CHAIN.001: CONTEXT IS MOAT ===
+
+  - id: pred.001
+    statement: "Products with deep context accumulation will have >2x user retention compared to thin wrappers at 12-month mark"
+    source_type: chain
+    source_id: chain.001
+    made_on: "2024-12-07"
+    check_by: "2025-06"
+    confidence: tentative
+    status: pending
+    falsifiable: true
+    outcome:
+      result: null  # confirmed, refuted, partial, unclear
+      date: null
+      evidence: null
+      notes: null
+
+  - id: pred.002
+    statement: "At least one major AI product (>$10M ARR) will differentiate primarily on context accumulation by end of 2025"
+    source_type: chain
+    source_id: chain.001
+    made_on: "2024-12-07"
+    check_by: "2025-12"
+    confidence: tentative
+    status: pending
+    falsifiable: true
+    outcome:
+      result: null
+      date: null
+      evidence: null
+      notes: null
+
+  # === FROM CHAIN.002: DISTRIBUTION BEATS PRODUCT ===
+
+  - id: pred.003
+    statement: "Majority of successful AI startups funded in 2024-2025 will have distribution advantage (audience, channel, partnership) rather than model/product advantage"
+    source_type: chain
+    source_id: chain.002
+    made_on: "2024-12-07"
+    check_by: "2026-01"
+    confidence: tentative
+    status: pending
+    falsifiable: true
+    outcome:
+      result: null
+      date: null
+      evidence: null
+      notes: null
+
+  # === FROM CHAIN.003: MIDDLE RESTRUCTURES ===
+
+  - id: pred.004
+    statement: "Average employee count at $5-50M revenue companies in knowledge work sectors will drop 20%+ by 2027"
+    source_type: chain
+    source_id: chain.003
+    made_on: "2024-12-07"
+    check_by: "2027-06"
+    confidence: speculative
+    status: pending
+    falsifiable: true
+    outcome:
+      result: null
+      date: null
+      evidence: null
+      notes: null
+
+  - id: pred.005
+    statement: "At least 3 documented 'AI-native' mid-market service firms making $5M+ revenue with <10 employees by end of 2025"
+    source_type: chain
+    source_id: chain.003
+    made_on: "2024-12-07"
+    check_by: "2025-12"
+    confidence: tentative
+    status: pending
+    falsifiable: true
+    outcome:
+      result: null
+      date: null
+      evidence: null
+      notes: null
+
+  # === FROM CHAIN.004: SINGLE WORKFLOW FLYWHEEL ===
+
+  - id: pred.006
+    statement: "We will identify at least 3 successful single-workflow AI businesses (>$500K ARR, <5 people) by mid-2025"
+    source_type: chain
+    source_id: chain.004
+    made_on: "2024-12-07"
+    check_by: "2025-06"
+    confidence: tentative
+    status: pending
+    falsifiable: true
+    outcome:
+      result: null
+      date: null
+      evidence: null
+      notes: null
+
+# === TRACKING ===
+
+tracking:
+  total: 6
+  by_status:
+    pending: 6
+    confirmed: 0
+    refuted: 0
+    partial: 0
+    unclear: 0
+  by_confidence:
+    speculative: 1
+    tentative: 5
+    grounded: 0
+    hardened: 0
+  calibration:
+    score: null  # (confirmed + 0.5*partial) / (total - pending - unclear)
+    last_calculated: null
+    notes: "No predictions resolved yet"
+
+  next_checkable:
+    - pred.001: "2025-06"
+    - pred.006: "2025-06"
+
+  timeline:
+    "2025-06": [pred.001, pred.006]
+    "2025-12": [pred.002, pred.005]
+    "2026-01": [pred.003]
+    "2027-06": [pred.004]
+
+# === META ===
+
+meta:
+  purpose: |
+    Predictions make beliefs accountable. If the brain believes something,
+    it should be willing to bet on observable outcomes.
+
+    Over time, calibration score reveals:
+    - Is the brain's confidence justified?
+    - Which domains is it well-calibrated vs overconfident?
+    - Are tentative beliefs appropriately uncertain?
+
+  criteria: |
+    Good predictions are:
+    - Falsifiable: clear conditions for true/false
+    - Time-bound: specific check date
+    - Observable: can verify without subjective interpretation
+    - Non-trivial: outcome isn't obvious
+
+  process: |
+    1. Predictions emerge from reasoning chains
+    2. Check dates trigger review
+    3. Outcomes are recorded with evidence
+    4. Calibration score updates
+    5. Systematic over/under-confidence surfaces

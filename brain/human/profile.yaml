@@ -1,0 +1,72 @@
+# Profile: Who You Are
+# The brain's model of YOU — identity, strengths, patterns, blind spots
+# Populated through conversation and self-reflection
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+
+# === IDENTITY ===
+
+identity:
+  name: ""
+  location: ""
+  current_role: ""
+
+# === BACKGROUND ===
+
+background:
+  summary: ""  # 2-3 sentence bio
+  origin_story: ""  # How you got here
+
+# === STRENGTHS ===
+
+strengths:
+  # What you know you're good at
+  known: []
+
+  # What you're better at than you think (others see it, you don't)
+  hidden: []
+
+# === WEAKNESSES ===
+
+weaknesses:
+  # What you know you struggle with
+  known: []
+
+  # What you don't see about yourself (blind spots)
+  blind_spots: []
+
+# === PATTERNS ===
+
+patterns:
+  # When/how you do your best work
+  productive:
+    # - "Deep work in mornings"
+    # - "Better at starting than finishing"
+    # - "Need external deadlines"
+
+  # Failure modes, avoidance patterns
+  destructive:
+    # - "Over-engineer when anxious"
+    # - "Avoid sales conversations"
+    # - "Scope creep on exciting projects"
+
+# === OPTIMIZATION ===
+
+optimization:
+  # What you say you want
+  stated: ""
+
+  # What your behavior suggests you want
+  revealed: ""
+
+  # The gap between them
+  delta: ""
+
+# === META ===
+
+meta:
+  confidence: speculative
+  last_validated: null
+  notes: "To be populated through onboarding conversation"

@@ -1,0 +1,106 @@
+# Project: HIVE
+# External codebase — evaluated, not owned
+
+project:
+  name: "HIVE"
+  id: "project.hive"
+  path: "/Users/laneyfraass/Desktop/HIVE"
+  repo: null  # Unknown
+  status: evaluating
+
+purpose:
+  one_liner: "Multi-tenant campus platform with HiveLab visual tool builder"
+  thread: null
+
+  problem: "Campus communities need custom tools but can't build them"
+  for_whom: "Universities, campus organizations, student groups"
+
+  moat_type: distribution
+  moat_notes: "B2B2C campus model — sell to university, captive audience. Space leaders create tools. Distribution is structural."
+
+decisions:
+  # Observed from codebase, not made by us
+
+  - id: decision.hive.001
+    date: "observed 2024-12-07"
+    what: "Next.js 15 + React 19 monorepo"
+    why: "Modern stack, App Router, Server Components"
+    alternatives_considered: null
+    revisit_if: null
+
+  - id: decision.hive.002
+    date: "observed 2024-12-07"
+    what: "DDD bounded contexts"
+    why: "Clean separation of concerns"
+    alternatives_considered: null
+    revisit_if: null
+
+  - id: decision.hive.003
+    date: "observed 2024-12-07"
+    what: "AI as copilot, not core"
+    why: "Cmd+K assist for generation. Users can build manually. Doesn't depend on brittle agents."
+    alternatives_considered: null
+    revisit_if: null
+
+conventions:
+  language: "TypeScript"
+  framework: "Next.js 15, React 19"
+
+  patterns:
+    - name: "RAG context retrieval"
+      description: "ContextRetrieverService embeds successful generations, retrieves for few-shot"
+      example_file: "Unknown path"
+
+  naming: {}
+  structure:
+    apps/: "3 apps in monorepo"
+    packages/: "12 shared packages"
+
+debt:
+  # Observed concerns
+
+  - id: debt.hive.001
+    location: "Overall"
+    description: "Platform scope vs team size mismatch risk"
+    severity: medium
+    blocked_by: "Unknown team capacity"
+
+state:
+  last_worked: "2024-12-07"
+  current_focus: "Evaluation only — not actively developing"
+  blocked_on: []
+  next_actions:
+    - "Validate campus pipeline"
+    - "Clarify revenue model"
+    - "Explore HiveLab engine as separate product"
+
+metrics:
+  users: null
+  revenue: null
+  key_metric: "spaces"
+  key_metric_value: "400+"
+
+evaluation:
+  judgment_id: judgment.002
+
+  checks:
+    real_problem: true
+    structural_advantage: true  # B2B2C distribution
+    clear_value_capture: unclear  # Revenue model not validated
+    ai_load_bearing: false  # AI is helpful but removable
+
+  concerns:
+    - "Platform complexity vs team size"
+    - "Campus sales cycle >3 months"
+    - "Revenue model unvalidated"
+
+  strengths:
+    - "Real context flywheel (RAG)"
+    - "Built-in distribution"
+    - "AI doesn't require agent reliability"
+    - "Architectural discipline"
+
+meta:
+  created: "2024-12-09"
+  last_updated: "2024-12-09"
+  sessions: 1

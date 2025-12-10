@@ -1,0 +1,93 @@
+# Patterns: Your Behavioral Patterns
+# What the brain notices about how you operate
+# Populated through observation and reflection
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+
+# === COMMUNICATION PATTERNS ===
+
+communication:
+  # Who you talk to most
+  high_frequency_contacts: []
+
+  # Who you've stopped talking to
+  lapsed_relationships: []
+
+  # Communication style
+  preferred_mediums: []  # email, call, message, in-person
+  response_time: ""  # quick, moderate, slow
+  initiation_rate: ""  # Do you reach out or wait?
+
+# === WORK PATTERNS ===
+
+work:
+  # When you're productive
+  peak_hours: []
+  peak_days: []
+
+  # What you gravitate toward
+  attracts: []
+    # - "New projects"
+    # - "Technical problems"
+    # - "Strategic thinking"
+
+  # What you avoid
+  avoids: []
+    # - "Sales conversations"
+    # - "Detailed documentation"
+    # - "Repetitive tasks"
+
+# === DECISION PATTERNS ===
+
+decisions:
+  # How you typically decide
+  style: ""  # analytical, intuitive, consultative, impulsive
+
+  # What you over-weight
+  biases: []
+    # - "Novelty over reliability"
+    # - "Speed over thoroughness"
+    # - "Technical elegance over user value"
+
+  # Regret patterns
+  common_regrets: []
+    # - "Moved too fast on X"
+    # - "Didn't talk to users first"
+    # - "Over-engineered"
+
+# === FAILURE MODES ===
+
+failure_modes:
+  # Patterns that lead to problems
+  triggers: []
+    # - trigger: "Exciting new idea"
+    #   leads_to: "Abandon current project"
+    #   frequency: often
+
+  # Warning signs
+  early_warnings: []
+    # - signal: "Energy dropping"
+    #   usually_means: "About to quit"
+    #   lead_time: "2-3 weeks"
+
+# === ENERGY TRACKING ===
+
+energy:
+  # What gives energy
+  energizers: []
+
+  # What drains energy
+  drains: []
+
+  # Current state
+  current_level: null  # high, medium, low
+  trend: null  # rising, stable, falling
+
+# === META ===
+
+meta:
+  confidence: speculative
+  last_validated: null
+  notes: "Patterns emerge from observation over time"

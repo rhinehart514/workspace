@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run-many -t build",
+    "startTime": "2025-12-10T01:34:47.529Z",
+    "endTime": "2025-12-10T01:34:51.681Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@workspace/brain:build",
+      "target": "build",
+      "projectName": "@workspace/brain",
+      "hash": "2613311530046456308",
+      "startTime": "2025-12-10T01:34:48.107Z",
+      "endTime": "2025-12-10T01:34:51.662Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

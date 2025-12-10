@@ -1,0 +1,593 @@
+# Entity Registry
+# Tracks all knowledge entities in the context library with confidence levels and metadata
+
+version: "1.0"
+last_updated: "2024-12-07"
+
+# Confidence levels:
+# - speculative: Worth considering, untested
+# - tentative: Plausible, some support
+# - grounded: Multiple validations
+# - hardened: High conviction, load-bearing (append-only)
+
+entities:
+
+  # === BELIEFS ===
+
+  - id: belief.small-is-underrated
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Building"
+    content: "Small is underrated. The instinct to build big is usually wrong."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.speed-matters
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Building"
+    content: "Speed matters more than most people admit."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.infrastructure-procrastination
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Building"
+    content: "Most infrastructure is procrastination."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.taste-is-learnable
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Building"
+    content: "Taste is real and learnable."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.ai-pressures-judgment
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On AI"
+    content: "AI doesn't replace judgment, it pressures it."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.context-is-moat
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On AI"
+    content: "Context is the moat people aren't building."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.ai-powered-meaningless
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On AI"
+    content: "AI-powered is already meaningless."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.agents-timing
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On AI"
+    content: "Agents are overhyped in the short term, underhyped in the long term."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.markets-smaller
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Markets"
+    content: "Most markets are smaller than they look."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.distribution-beats-product
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Markets"
+    content: "Distribution beats product, usually."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.b2b-underrated
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Markets"
+    content: "B2B is underrated by technical founders."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.ai-eats-x-lazy
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Markets"
+    content: "The 'AI will eat X' framing is lazy."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.user-conversations-cheat
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Process"
+    content: "Talking to users is the cheat code."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: belief.writing-clarifies
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Process"
+    content: "Writing clarifies thinking."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: "2024-12-06"
+    source: initial_creation
+    notes: "Already demonstrated by creating this library"
+
+  - id: belief.optionality-cost
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Process"
+    content: "Optionality has a cost."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  # === TERMS ===
+
+  - id: term.thin-wrapper
+    type: term
+    location: context/vocabulary/terms.md
+    content: "A product that's just a UI layer over an API with no accumulated value."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: term.context-moat
+    type: term
+    location: context/vocabulary/terms.md
+    content: "Defensibility from accumulated knowledge, user data, or workflow integration."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: term.capability-compression
+    type: term
+    location: context/vocabulary/terms.md
+    content: "When something that required a product becomes an API call or prompt."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: term.wedge
+    type: term
+    location: context/vocabulary/terms.md
+    content: "The initial entry point into a market."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: term.context-engineering
+    type: term
+    location: context/vocabulary/terms.md
+    content: "Structuring information so LLMs can use it effectively."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: term.load-bearing
+    type: term
+    location: context/vocabulary/terms.md
+    content: "A component that's essential to function."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  # === THREADS ===
+
+  - id: thread.saas-futures
+    type: thread
+    location: context/threads/saas-futures.md
+    status: active
+    content: "If traditional SaaS is compressing, what replaces it?"
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+    open_questions:
+      - "What's the smallest viable AI-native business model?"
+      - "Does context moat actually work long-term?"
+      - "Will outcome-based pricing become standard?"
+      - "Where do agents fit?"
+
+  # === PRINCIPLES ===
+
+  - id: principle.real-problem-urgency
+    type: principle
+    location: context/principles/product-thinking.md
+    content: "Real problem, real urgency. The problem exists today."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: principle.structural-advantage
+    type: principle
+    location: context/principles/product-thinking.md
+    content: "There's a reason this is hard to copy."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: principle.clear-value-capture
+    type: principle
+    location: context/principles/product-thinking.md
+    content: "We can explain how money flows."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: principle.ai-load-bearing
+    type: principle
+    location: context/principles/product-thinking.md
+    content: "AI should be load-bearing, not decorative."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  # === ANTI-PATTERNS ===
+
+  - id: antipattern.thin-wrappers
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Building a UI around an API call with no value accumulation."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: antipattern.feature-hunting
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Adding capabilities because they're possible, not needed."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: antipattern.premature-scaling
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Building infrastructure for millions before you have hundreds."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: antipattern.complexity-theater
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Sophisticated architecture that doesn't serve the user."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: antipattern.ai-decoration
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Slapping AI onto a product that doesn't need it."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  - id: antipattern.model-dependency
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "This will work when models get better."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: null
+    source: initial_creation
+
+  # === PATTERNS (from exploration) ===
+
+  - id: pattern.single-workflow-context-flywheel
+    type: pattern
+    location: context/threads/saas-futures.md
+    content: "Smallest viable AI-native business: one high-value workflow that accumulates context through use."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: exploration_agent
+    characteristics:
+      - "One workflow, done well (not a platform)"
+      - "Context accumulation built-in"
+      - "Low marginal cost (API costs << value)"
+      - "Distribution through the workflow itself"
+      - "Can be built by one person"
+
+  - id: insight.portable-vs-defensible-context
+    type: insight
+    location: context/threads/saas-futures.md
+    content: "Context moat works when context is proprietary and accumulates through use — not when it's input the user already has elsewhere."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: exploration_agent
+    evidence: "Code completion tools show context (codebase) is portable, doesn't create moat"
+
+  # === PUCKCAST THREAD (from exploration) ===
+
+  - id: thread.puckcast
+    type: thread
+    location: context/threads/puckcast.md
+    status: active
+    content: "NHL prediction product claiming 60% accuracy. Evaluated against 2025 market reality."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: "2024-12-06"
+    source: exploration_agent
+    open_questions:
+      - "What's the actual ROI after accounting for vig?"
+      - "Is there a distribution wedge we're missing?"
+      - "Should this be B2B data rather than B2C predictions?"
+      - "Is the real product community + identity, not predictions?"
+
+  - id: insight.accuracy-vs-vig
+    type: insight
+    location: context/threads/puckcast.md
+    content: "60% accuracy sounds good but sportsbooks take ~5% vig. Need ~52.4% just to break even. Real question is ROI after vig, not raw accuracy."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: "2024-12-06"
+    source: exploration_agent
+    evidence: "Sports betting market research confirms vig structure"
+
+  - id: insight.nhl-niche-paradox
+    type: insight
+    location: context/threads/puckcast.md
+    content: "NHL is niche within niche (smaller than NFL/NBA). Could be advantage (less competition) or disadvantage (limited TAM). Must pick one framing."
+    confidence: tentative
+    created: "2024-12-06"
+    last_validated: null
+    source: exploration_agent
+
+  - id: insight.prediction-distribution-gap
+    type: insight
+    location: context/threads/puckcast.md
+    content: "Prediction products face timing problem: must reach users before they've already bet. No distribution strategy = no business, regardless of accuracy."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: "2024-12-06"
+    source: exploration_agent
+    evidence: "Distribution research shows timing is critical for betting content"
+
+  # === DOMAINS (from research) ===
+
+  - id: domain.sports-betting-2025
+    type: domain
+    location: context/domains/sports-betting-2025.md
+    content: "Sports betting market: $155B→$257B growth, 38 states legal, live betting 59.58%, AI integration accelerating."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: "2024-12-06"
+    source: web_research
+
+  - id: domain.ai-landscape-2025
+    type: domain
+    location: context/domains/ai-landscape-2025.md
+    content: "AI landscape: Small teams winning ($100M ARR with <50 people), dev tools hottest, vertical AI rising."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: "2024-12-06"
+    source: web_research
+
+  - id: domain.distribution-2025
+    type: domain
+    location: context/domains/distribution-2025.md
+    content: "Distribution 2025: Social SEO real, email still highest ROI, community is new SEO, short-form 3x engagement."
+    confidence: grounded
+    created: "2024-12-06"
+    last_validated: "2024-12-06"
+    source: web_research
+
+  # === BELIEFS FROM 2024-12-07 SESSION ===
+
+  - id: belief.middle-restructures
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Markets"
+    content: "The middle restructures, it doesn't disappear. Barbell economy thesis is too simple."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+
+  - id: belief.local-physical-premium
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Markets"
+    content: "Local and physical gain relative value as digital commoditizes."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+
+  - id: belief.leverage-adoption-niche
+    type: belief
+    location: null
+    section: null
+    content: "Leverage adoption speed + niche defensibility determines mid-market survival."
+    confidence: speculative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+    notes: "Hypothesis from session, not yet added to beliefs.md"
+
+  # === TERMS FROM 2024-12-07 SESSION ===
+
+  - id: term.barbell-economy
+    type: term
+    location: context/vocabulary/terms.md
+    content: "Thesis that economy bifurcates into giants and tiny operators, hollowing the middle."
+    confidence: grounded
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+
+  - id: term.translation-layer-business
+    type: term
+    location: context/vocabulary/terms.md
+    content: "Business bridging AI exists to my business uses AI well for a specific vertical."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+
+  - id: term.ai-native-micro-corp
+    type: term
+    location: context/vocabulary/terms.md
+    content: "1-3 humans with AI leverage, $500K-$2M+ revenue per employee."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+
+  # === PATTERNS FROM 2024-12-07 SESSION ===
+
+  - id: pattern.viable-niche-formula
+    type: pattern
+    location: null
+    content: "Specific vertical + ongoing relationship + accountability required + AI amplifies not replaces."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+    characteristics:
+      - "Narrow enough that platforms ignore"
+      - "Deep enough to be irreplaceable"
+      - "AI makes you better, not replaceable"
+
+  # === ENTITIES FROM 2024-12-07 SESSION (Brain Evolution + HIVE) ===
+
+  - id: codebase.hive
+    type: codebase
+    location: "/Users/laneyfraass/Desktop/HIVE"
+    content: "Multi-tenant campus platform with HiveLab visual tool builder. First external codebase analyzed by the brain."
+    confidence: grounded
+    created: "2024-12-07"
+    last_validated: "2024-12-07"
+    source: reflection_agent
+    characteristics:
+      - "Next.js 15 + React 19 monorepo"
+      - "HiveLab: Figma + Cursor for campus tools"
+      - "RAG-based context accumulation"
+      - "B2B2C campus distribution model"
+
+  - id: insight.engine-vs-wrapper
+    type: insight
+    location: null
+    content: "For platform products, the core engine (generation, RAG, tooling) may be more valuable than the distribution wrapper (SaaS). Can monetize separately: API licensing, white-label, marketplace."
+    confidence: speculative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+    evidence: "Emerged from HIVE revenue model analysis"
+
+  - id: observation.institutional-distribution
+    type: observation
+    location: null
+    content: "B2B2C to institutions = distribution advantage but friction penalty. Long sales cycles (3+ months), procurement processes, IT approval. Slow to capture, sticky once captured."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: null
+    source: reflection_agent
+    evidence: "HIVE campus model analysis"
+
+  # === SYNTHESIZED INSIGHTS (2024-12-07) ===
+
+  - id: synthesis.context-moat-condition
+    type: synthesis
+    location: null
+    content: "Context moat works when context is generated through use (proprietary) — not when context is brought by user (portable). The mechanism matters: accumulate through workflow, not store from import."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: "2024-12-07"
+    source: synthesis_agent
+    synthesis_inputs:
+      - belief.context-is-moat
+      - insight.portable-vs-defensible-context
+      - codebase.hive
+    notes: "Resolves tension between context-is-moat and portable context challenge. Both are true — conditional on mechanism."
+
+  - id: synthesis.minimum-viable-team-shrinking
+    type: synthesis
+    location: null
+    content: "The minimum viable business unit is shrinking toward 1-3 people with AI leverage. Platform complexity (HIVE) vs micro-corp efficiency (single-workflow) creates a tension point around scope."
+    confidence: tentative
+    created: "2024-12-07"
+    last_validated: null
+    source: synthesis_agent
+    synthesis_inputs:
+      - term.ai-native-micro-corp
+      - belief.small-is-underrated
+      - codebase.hive
+    notes: "HIVE challenges this by succeeding (tentatively) at platform scale. May indicate market-dependent threshold."
+
+  - id: synthesis.distribution-primacy-load-bearing
+    type: synthesis
+    location: null
+    content: "belief.distribution-beats-product is load-bearing — most validated belief in the graph. Both Puckcast (failure mode) and HIVE (success mode) validate it. Consider upgrading confidence."
+    confidence: grounded
+    created: "2024-12-07"
+    last_validated: "2024-12-07"
+    source: synthesis_agent
+    synthesis_inputs:
+      - belief.distribution-beats-product
+      - thread.puckcast
+      - codebase.hive
+      - observation.institutional-distribution
+    recommendation: "Upgrade belief.distribution-beats-product from tentative to grounded"

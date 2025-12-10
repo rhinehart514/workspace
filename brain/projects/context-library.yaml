@@ -1,0 +1,142 @@
+# Project: Context Library (This System)
+# The brain that tracks itself
+
+project:
+  name: "Context Library"
+  id: "project.context-library"
+  path: "/Users/laneyfraass/prompts"
+  repo: null
+  status: active
+
+purpose:
+  one_liner: "Infrastructure for externalized cognition — a persistent, compounding, queryable version of a human mind"
+  thread: thread.saas-futures
+
+  problem: "Knowledge and thinking don't persist between AI sessions. Every conversation starts from zero."
+  for_whom: "Initially me. Eventually anyone who wants a personal AGI."
+
+  moat_type: context
+  moat_notes: "The system accumulates beliefs, predictions, judgments, and calibration data through use. Each session makes it more valuable."
+
+decisions:
+
+  - id: decision.001
+    date: "2024-12-06"
+    what: "YAML for graph, Markdown for prose"
+    why: "YAML is machine-readable for future tooling. Markdown is human-readable for context loading."
+    alternatives_considered: ["All JSON", "All Markdown", "Database"]
+    revisit_if: "Graph becomes too large for file-based approach"
+
+  - id: decision.002
+    date: "2024-12-06"
+    what: "Confidence levels: speculative → tentative → grounded → hardened"
+    why: "Beliefs need gradations. Can't just be true/false. The system should know what it knows."
+    alternatives_considered: ["Binary confidence", "Numeric scores"]
+    revisit_if: "Calibration data shows these buckets aren't useful"
+
+  - id: decision.003
+    date: "2024-12-09"
+    what: "Load-bearing CLAUDE.md — beliefs/vocab/threads embedded directly"
+    why: "System should BE the context, not describe how to load context. Every session starts with knowledge already present."
+    alternatives_considered: ["Keep separate files with load commands"]
+    revisit_if: "CLAUDE.md becomes too long and causes context issues"
+
+  - id: decision.004
+    date: "2024-12-09"
+    what: "Proactive agenda — brain drives session, not user"
+    why: "Reactive systems wait. Proactive systems think. The brain should have opinions about what matters."
+    alternatives_considered: ["Keep reactive with slash commands"]
+    revisit_if: "Proactive mode becomes annoying rather than useful"
+
+conventions:
+  language: "YAML, Markdown"
+  framework: "None — file-based knowledge system"
+
+  patterns:
+    - name: "Entity IDs"
+      description: "type.kebab-case (e.g., belief.context-is-moat)"
+      example_file: "context/_graph/entities.yaml"
+
+    - name: "Confidence levels in comments"
+      description: "<!-- entity: id | confidence: level -->"
+      example_file: "context/worldview/beliefs.md"
+
+    - name: "Agent protocols"
+      description: "Each agent has a .md file with trigger, process, output format"
+      example_file: "context/_brain/agents/reflection.md"
+
+  naming:
+    beliefs: "belief.short-description"
+    terms: "term.name"
+    threads: "thread.topic"
+    predictions: "pred.NNN"
+    judgments: "judgment.NNN"
+
+  structure:
+    context/worldview: "Beliefs and positions"
+    context/principles: "Evaluation criteria"
+    context/domains: "Vertical knowledge"
+    context/threads: "Active questions"
+    context/vocabulary: "Term definitions"
+    context/_brain: "Agent state, protocols, logs, projects"
+    context/_graph: "Entity registry, relationships, predictions, judgments"
+
+debt:
+
+  - id: debt.001
+    location: "context/_graph/entities.yaml"
+    description: "Growing too large. Should probably split by entity type eventually."
+    severity: low
+    blocked_by: "Not a problem yet"
+
+  - id: debt.002
+    location: "CLAUDE.md"
+    description: "Active threads section will need manual updates as threads change"
+    severity: medium
+    blocked_by: "No automation for syncing CLAUDE.md with thread state"
+
+  - id: debt.003
+    location: "context/_brain/agents/"
+    description: "Agent protocols are documented but not enforced by code"
+    severity: low
+    blocked_by: "File-based system has no runtime"
+
+state:
+  last_worked: "2024-12-09"
+  current_focus: "Making the brain proactive and code-aware"
+  blocked_on: []
+  next_actions:
+    - "Create codebase evaluation protocol"
+    - "Create tool registry"
+    - "Add thread momentum tracking"
+    - "Test proactive agenda in next session"
+
+metrics:
+  users: 1
+  revenue: null
+  key_metric: "session_count"
+  key_metric_value: 6
+
+evaluation:
+  judgment_id: null  # Haven't formally judged ourselves yet
+
+  checks:
+    real_problem: true
+    structural_advantage: true  # Context accumulation
+    clear_value_capture: unclear  # Not monetizing, personal use
+    ai_load_bearing: true
+
+  concerns:
+    - "Complexity might be procrastination"
+    - "System could become maintenance burden"
+    - "Beliefs might not actually improve decisions"
+
+  strengths:
+    - "Recursive — the system helps think about itself"
+    - "Context moat is real — already valuable after 6 sessions"
+    - "Predictions create accountability"
+
+meta:
+  created: "2024-12-09"
+  last_updated: "2024-12-09"
+  sessions: 6

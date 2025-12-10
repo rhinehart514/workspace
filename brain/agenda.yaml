@@ -1,0 +1,180 @@
+# Proactive Agenda
+# Things the brain will DO at session start — not suggestions, actions
+# The brain doesn't ask "what do you want?" — it says "here's what I think matters"
+
+version: "1.0"
+created: "2024-12-09"
+last_updated: "2024-12-09"
+
+# Priority: critical > high > medium > low
+# Action types: challenge, surface, ask, remind, propose, check
+
+# === IMMEDIATE ACTIONS ===
+# Do these at session start without being asked
+
+immediate:
+
+  - id: agenda.001
+    action: challenge
+    target: belief.small-is-underrated
+    reason: "HIVE is succeeding at platform scale. This challenges the belief."
+    prompt: "HIVE's codebase shows platform-level complexity working. Does this refute 'small is underrated' or is it an exception? Let's pressure-test."
+    priority: high
+    added: "2024-12-09"
+    source: synthesis_agent
+
+  - id: agenda.002
+    action: propose
+    target: belief.distribution-beats-product
+    reason: "Synthesis identified this as most-validated belief. Should upgrade confidence."
+    prompt: "Distribution-beats-product is validated by both Puckcast (failure) and HIVE (success). Recommend upgrading from tentative to grounded. Approve?"
+    priority: high
+    added: "2024-12-09"
+    source: synthesis_agent
+
+  - id: agenda.003
+    action: ask
+    target: thread.puckcast
+    reason: "Thread hasn't progressed in 3 days. Either work on it or kill it."
+    prompt: "Puckcast thread is stale. Three options: (1) kill it, (2) explore the community/identity pivot, (3) calculate actual ROI after vig. Which?"
+    priority: medium
+    added: "2024-12-09"
+    source: staleness_check
+
+# === SCHEDULED CHECKS ===
+# Things to check based on dates
+
+scheduled:
+
+  - id: sched.001
+    type: prediction_check
+    target: pred.001
+    check_date: "2025-06"
+    description: "Check if context accumulation products show >2x retention"
+    status: future
+
+  - id: sched.002
+    type: prediction_check
+    target: pred.006
+    check_date: "2025-06"
+    description: "Check if we've identified 3+ single-workflow AI businesses"
+    status: future
+
+  - id: sched.003
+    type: prediction_check
+    target: pred.hive.001
+    check_date: "2025-03"
+    description: "Check if HiveLab RAG improves generation quality"
+    status: future
+
+# === BACKGROUND THREADS ===
+# Things the brain is passively watching for
+
+watching:
+
+  - id: watch.001
+    pattern: "evidence about agent reliability"
+    target: belief.agents-timing
+    reason: "Belief says 'overhyped short-term, underhyped long-term' but this is fast-moving. Watch for counter-evidence."
+    last_evidence: null
+
+  - id: watch.002
+    pattern: "examples of mid-size business restructuring with AI"
+    target: belief.middle-restructures
+    reason: "Need concrete examples to validate or refute"
+    last_evidence: null
+
+  - id: watch.003
+    pattern: "thin wrapper products that succeeded anyway"
+    target: antipattern.thin-wrappers
+    reason: "The antipattern may have exceptions. Watch for counter-examples."
+    last_evidence: null
+
+# === PROACTIVE SUGGESTIONS ===
+# Things the brain thinks you should consider building/exploring
+
+suggestions:
+
+  - id: suggest.001
+    type: build
+    description: "Prototype the context library onboarding flow"
+    rationale: "You want to make this transferable (Level 2). The onboarding is the hard part."
+    thread: thread.saas-futures
+    priority: medium
+
+  - id: suggest.002
+    type: explore
+    description: "Research institutional memory products that failed"
+    rationale: "Understanding why Notion/Confluence don't become 'brains' helps position this correctly"
+    thread: null
+    priority: low
+
+  - id: suggest.003
+    type: evaluate
+    description: "Find another codebase to judge — test the evaluation framework"
+    rationale: "One judgment (HIVE) isn't enough to validate the evaluation protocol"
+    thread: null
+    priority: medium
+
+  - id: suggest.004
+    type: onboard
+    description: "Import LinkedIn data and populate human layer"
+    rationale: "Network intelligence is ready but needs data. Export LinkedIn and run ingest."
+    thread: null
+    priority: high
+    instructions: |
+      1. Go to LinkedIn Settings → Data Privacy → Get a copy of your data
+      2. Select 'Download larger data archive'
+      3. Wait for email, download ZIP, extract
+      4. Run: python -m context._brain.human.ingest.linkedin <path-to-export>
+
+# === SESSION HOOKS ===
+# Things that happen every session
+
+session_hooks:
+  on_start:
+    - "Surface immediate agenda items"
+    - "Check for predictions due within 30 days"
+    - "Note any threads untouched for >7 days"
+    - "Mention highest-priority attention item"
+    - "Check network for stale relationships (if populated)"
+    - "Match current threads to people who could help"
+    - "Surface any draining connections user might encounter today"
+    - "Note high-trust connections relevant to current work"
+
+  during:
+    - "Flag contradictions with beliefs in real-time"
+    - "Note when threads progress"
+    - "Capture new terms/beliefs as they emerge"
+    - "When discussing a topic, surface relevant network connections"
+    - "Before meetings, offer connection brief (positives, negatives, watch-outs)"
+    - "When user mentions a person, surface their assessment if available"
+    - "When making introductions, check for negatives on both sides"
+
+  on_end:
+    - "Update agenda based on session"
+    - "Log session activity"
+    - "Queue reflection if substantive"
+    - "Note any network follow-ups needed"
+    - "Flag any connections that should be reassessed based on session"
+    - "Suggest enrichment for connections discussed without full assessment"
+
+# === META ===
+
+meta:
+  purpose: |
+    The agenda makes the brain proactive, not reactive.
+    Instead of waiting for instructions, the brain:
+    - Challenges beliefs that have counter-evidence
+    - Proposes upgrades when evidence accumulates
+    - Prods stale threads
+    - Watches for patterns relevant to open questions
+    - Suggests what to build or explore next
+
+  maintenance: |
+    Agenda items are:
+    - Added by agents (synthesis, curator, reflection)
+    - Removed when addressed
+    - Escalated if ignored repeatedly
+
+    The agenda is the brain's voice. If it's empty, the brain has nothing to say.

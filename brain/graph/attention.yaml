@@ -1,0 +1,131 @@
+# Attention Queue
+# Tracks what needs focus, exploration, or resolution
+
+version: "1.0"
+last_updated: "2024-12-06"
+
+# Priority levels: critical, high, medium, low
+# Status: pending, in_progress, resolved, deferred
+
+# === EXPLORATION QUEUE ===
+# Things the brain should investigate
+
+exploration_queue:
+
+  - id: explore.001
+    priority: high
+    target: thread.saas-futures
+    action: "Explore open questions"
+    specific_focus: "What's the smallest viable AI-native business model?"
+    reason: "Core thread with unanswered questions"
+    status: completed
+    completed: "2024-12-06"
+    outcome: "Identified pattern: single-workflow-context-flywheel. Found counter-evidence re: portable context."
+    created: "2024-12-06"
+
+  - id: explore.002
+    priority: high
+    target: belief.context-is-moat
+    action: "Validate belief"
+    specific_focus: "Find counter-examples where context moats failed"
+    reason: "High-conviction belief needs pressure testing"
+    status: pending
+    created: "2024-12-06"
+
+  - id: explore.003
+    priority: medium
+    target: belief.agents-timing
+    action: "Update evidence"
+    specific_focus: "Check current state of agent reliability"
+    reason: "Fast-moving area, belief may be outdated"
+    status: pending
+    created: "2024-12-06"
+
+  - id: explore.004
+    priority: medium
+    target: null
+    action: "Create domain file"
+    specific_focus: "Document a specific vertical or technology"
+    reason: "domains/ directory is empty except template"
+    status: pending
+    created: "2024-12-06"
+
+  - id: explore.005
+    priority: low
+    target: term.wedge
+    action: "Expand definition"
+    specific_focus: "Add examples of successful wedges"
+    reason: "Term is defined but lacks concrete examples"
+    status: pending
+    created: "2024-12-06"
+
+# === VALIDATION QUEUE ===
+# Beliefs that need evidence or pressure-testing
+
+validation_queue:
+
+  - id: validate.001
+    entity: belief.distribution-beats-product
+    reason: "Common wisdom but may have exceptions in AI context"
+    suggested_action: "Find AI products where product quality trumped distribution"
+    priority: medium
+    status: pending
+    created: "2024-12-06"
+
+  - id: validate.002
+    entity: belief.ai-eats-x-lazy
+    reason: "Strong opinion, should have concrete examples"
+    suggested_action: "Document specific lazy vs rigorous AI opportunity framings"
+    priority: low
+    status: pending
+    created: "2024-12-06"
+
+# === CONTRADICTION QUEUE ===
+# Tensions that need resolution
+
+contradiction_queue:
+
+  - id: contra.001
+    entities:
+      - belief.speed-matters
+      - belief.small-is-underrated
+    tension: "Speed can push toward larger scope; small emphasizes restraint"
+    suggested_resolution: "Clarify that speed applies to iteration, small to scope"
+    priority: low
+    status: pending
+    created: "2024-12-06"
+
+# === STALENESS TRACKING ===
+# Entities approaching review thresholds
+
+staleness_rules:
+  belief:
+    review_after_days: 90
+    action: "Queue for validation"
+  observation:
+    review_after_days: 60
+    action: "Check for updates"
+  thread:
+    stale_after_days: 30
+    action: "Prompt for progress update"
+  domain:
+    review_after_days: 120
+    action: "Check for relevance"
+
+stale_items: []
+# Will be populated as items age
+
+# === RECENT ACTIVITY ===
+# What the brain has done recently
+
+recent_activity:
+  - timestamp: "2024-12-06"
+    agent: exploration
+    action: "Explored thread.saas-futures: smallest viable AI-native business model"
+    outcome: "Identified pattern (single-workflow-context-flywheel), found insight (portable vs defensible context), added 4 new questions"
+    entities_affected:
+      - thread.saas-futures
+      - pattern.single-workflow-context-flywheel
+      - insight.portable-vs-defensible-context
+    entities_created: 2
+    relationships_created: 5
