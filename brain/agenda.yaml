@@ -14,12 +14,48 @@ last_updated: "2024-12-09"
 
 immediate:
 
+  - id: agenda.revenue.001
+    action: validate
+    target: idea.001
+    reason: "Local Business AI Ops is highest confidence idea. Needs customer validation NOW."
+    prompt: "This week: Find 5 Buffalo contractors. Ask: 'How much time do you spend chasing unpaid invoices? Would you pay $200/mo to never do that again?' Report back with responses."
+    priority: critical
+    added: "2024-12-11"
+    source: revenue_focus
+
+  - id: agenda.revenue.002
+    action: validate
+    target: idea.002
+    reason: "Flutter Agency has fastest path to cash. You can start selling TODAY."
+    prompt: "DM 10 AI founders who launched on ProductHunt in the last 30 days. Message: 'Saw your launch. Do you have a mobile app? I build Flutter apps for AI startups in 2 weeks.' Track responses."
+    priority: critical
+    added: "2024-12-11"
+    source: revenue_focus
+
+  - id: agenda.revenue.003
+    action: ship
+    target: idea.003
+    reason: "Context Kits is fastest to first dollar — you already have the product."
+    prompt: "Quick win opportunity: Package the brain system you've built. Create a Gumroad page for 'Solopreneur Brain' at $49. Ship by end of week. Post on Twitter to test demand."
+    priority: high
+    added: "2024-12-11"
+    source: revenue_focus
+
+  - id: agenda.revenue.004
+    action: kill
+    target: thread.puckcast
+    reason: "Puckcast fails the revenue filter. No clear path to MRR. Time to move on."
+    prompt: "RECOMMENDATION: Kill Puckcast. It has no paying customer path. Time spent on Puckcast = time NOT spent on ideas that could make money. Archive the thread and move on."
+    priority: high
+    added: "2024-12-11"
+    source: revenue_focus
+
   - id: agenda.001
     action: challenge
     target: belief.small-is-underrated
     reason: "HIVE is succeeding at platform scale. This challenges the belief."
     prompt: "HIVE's codebase shows platform-level complexity working. Does this refute 'small is underrated' or is it an exception? Let's pressure-test."
-    priority: high
+    priority: medium
     added: "2024-12-09"
     source: synthesis_agent
 
@@ -28,18 +64,9 @@ immediate:
     target: belief.distribution-beats-product
     reason: "Synthesis identified this as most-validated belief. Should upgrade confidence."
     prompt: "Distribution-beats-product is validated by both Puckcast (failure) and HIVE (success). Recommend upgrading from tentative to grounded. Approve?"
-    priority: high
-    added: "2024-12-09"
-    source: synthesis_agent
-
-  - id: agenda.003
-    action: ask
-    target: thread.puckcast
-    reason: "Thread hasn't progressed in 3 days. Either work on it or kill it."
-    prompt: "Puckcast thread is stale. Three options: (1) kill it, (2) explore the community/identity pivot, (3) calculate actual ROI after vig. Which?"
     priority: medium
     added: "2024-12-09"
-    source: staleness_check
+    source: synthesis_agent
 
 # === SCHEDULED CHECKS ===
 # Things to check based on dates
@@ -92,36 +119,50 @@ watching:
 
 # === PROACTIVE SUGGESTIONS ===
 # Things the brain thinks you should consider building/exploring
+# REVENUE-FIRST: All suggestions filtered through MRR lens
 
 suggestions:
 
-  - id: suggest.001
-    type: build
-    description: "Prototype the context library onboarding flow"
-    rationale: "You want to make this transferable (Level 2). The onboarding is the hard part."
-    thread: thread.saas-futures
-    priority: medium
-
-  - id: suggest.002
-    type: explore
-    description: "Research institutional memory products that failed"
-    rationale: "Understanding why Notion/Confluence don't become 'brains' helps position this correctly"
+  - id: suggest.mrr.001
+    type: validate
+    description: "Find 3 ideas with shortest path to $1K MRR"
+    rationale: "Revenue is oxygen. No ideas in pipeline = no future revenue. This is the most important task."
     thread: null
-    priority: low
+    priority: critical
+    instructions: |
+      For each idea answer:
+      1. Who pays? (specific person/role, not 'businesses')
+      2. How much? (price point)
+      3. How often? (MRR vs one-time)
+      4. Why now? (urgency)
+      5. Time to first dollar? (days, not months)
 
-  - id: suggest.003
-    type: evaluate
-    description: "Find another codebase to judge — test the evaluation framework"
-    rationale: "One judgment (HIVE) isn't enough to validate the evaluation protocol"
+  - id: suggest.mrr.002
+    type: sell
+    description: "Pre-sell before building — get a commitment"
+    rationale: "Best validation is someone paying. Can you get a customer to pay before the product exists?"
     thread: null
-    priority: medium
+    priority: critical
+    instructions: |
+      1. Pick top idea from pipeline
+      2. Create simple landing page or pitch
+      3. Ask 10 potential customers: 'Would you pay $X for this?'
+      4. If yes: 'Great, here's the payment link'
+      5. Money talks, everything else walks
+
+  - id: suggest.mrr.003
+    type: kill
+    description: "Kill Puckcast unless you can name a paying customer"
+    rationale: "Sunk cost fallacy is real. Time on Puckcast = time not on something that makes money."
+    thread: thread.puckcast
+    priority: high
 
   - id: suggest.004
     type: onboard
     description: "Import LinkedIn data and populate human layer"
-    rationale: "Network intelligence is ready but needs data. Export LinkedIn and run ingest."
+    rationale: "Network = distribution opportunities. Who in your network could be a customer or connector?"
     thread: null
-    priority: high
+    priority: medium
     instructions: |
       1. Go to LinkedIn Settings → Data Privacy → Get a copy of your data
       2. Select 'Download larger data archive'
@@ -133,31 +174,28 @@ suggestions:
 
 session_hooks:
   on_start:
-    - "Surface immediate agenda items"
+    - "REVENUE CHECK: What's the most direct path to MRR today?"
+    - "Surface immediate agenda items (revenue items first)"
+    - "Idea pipeline status — are there 3 ideas in validation?"
     - "Check for predictions due within 30 days"
-    - "Note any threads untouched for >7 days"
-    - "Mention highest-priority attention item"
-    - "Check network for stale relationships (if populated)"
-    - "Match current threads to people who could help"
-    - "Surface any draining connections user might encounter today"
-    - "Note high-trust connections relevant to current work"
+    - "Note any threads untouched for >7 days — should they be killed?"
+    - "Match current work to revenue potential"
 
   during:
+    - "REVENUE FILTER: Does this activity move MRR? If not, why are we doing it?"
     - "Flag contradictions with beliefs in real-time"
-    - "Note when threads progress"
-    - "Capture new terms/beliefs as they emerge"
-    - "When discussing a topic, surface relevant network connections"
-    - "Before meetings, offer connection brief (positives, negatives, watch-outs)"
-    - "When user mentions a person, surface their assessment if available"
-    - "When making introductions, check for negatives on both sides"
+    - "When discussing ideas, immediately ask: who pays, how much, why now?"
+    - "Challenge features that don't have paying customers asking for them"
+    - "Note when threads progress toward revenue"
+    - "When discussing a topic, surface network connections who could be customers"
 
   on_end:
+    - "REVENUE REVIEW: What moved MRR this session? What didn't?"
     - "Update agenda based on session"
+    - "Update idea pipeline status"
     - "Log session activity"
-    - "Queue reflection if substantive"
-    - "Note any network follow-ups needed"
-    - "Flag any connections that should be reassessed based on session"
-    - "Suggest enrichment for connections discussed without full assessment"
+    - "If no revenue progress: why? what blocked it?"
+    - "Next session priority: what's the fastest path to $?"
 
 # === META ===
 

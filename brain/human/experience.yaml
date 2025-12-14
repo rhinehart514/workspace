@@ -5,62 +5,95 @@
 version: "1.0"
 created: "2024-12-09"
 last_updated: "2024-12-09"
-source: null  # Will be set to "linkedin_export" after first import
+source: "jacobrhinehart.com"
 
 # === ROLES ===
 
-roles: []
-  # Each role has this structure:
-  # - company: ""
-  #   title: ""
-  #   start_date: ""
-  #   end_date: ""  # null if current
-  #   domain: ""
-  #
-  #   # What actually matters (manual):
-  #   learned: []      # Real lessons
-  #   built: []        # What you shipped
-  #   failed_at: []    # What didn't work
-  #   relationships: []  # People from this role (links to network)
+roles:
+  - company: "HIVE"
+    title: "Founder"
+    start_date: "2024"
+    end_date: null  # Current
+    domain: "Campus social platform"
+
+    learned:
+      - "Building for campus distribution (B2B2C model)"
+      - "Flutter at scale"
+      - "RAG context retrieval for AI features"
+    built:
+      - "Full platform — 400+ spaces"
+      - "HiveLab visual tool builder"
+      - "Multi-tenant campus architecture"
+    failed_at: []  # Unknown
+    relationships: []
 
 # === SKILLS ===
 
 skills:
-  # From LinkedIn endorsements:
-  linkedin: []
+  # From website:
+  technical:
+    - skill: "Flutter/Dart"
+      level: 90
+    - skill: "TypeScript"
+      level: 88
+    - skill: "React"
+      level: 85
+    - skill: "Firebase"
+      level: 85
+    - skill: "C#/.NET"
+      level: 82
+    - skill: "Next.js"
+      level: null
+    - skill: "Supabase"
+      level: null
+    - skill: "Tailwind CSS"
+      level: null
 
-  # Manual categorization:
-  technical: []
-  domain: []
-  soft: []
+  domain:
+    - "Mobile development"
+    - "Web development"
+    - "UI/UX design"
+    - "Campus/student market"
+    - "Community platforms"
+
+  soft:
+    - "Product thinking"
+    - "Entrepreneurial execution"
+    - "Problem-first approach"
 
   # Honest assessment:
-  strong: []      # Actually good at these
-  developing: []  # Working on these
-  gaps: []        # Things you know you don't know
-  overrated: []   # Skills you have that aren't as useful as you thought
+  strong:
+    - "Flutter mobile development"
+    - "Full-stack web (React/Next.js/TypeScript)"
+    - "Shipping real products"
+
+  developing: []
+
+  gaps:
+    - "Distribution/marketing (implied by brain beliefs)"
+    - "Sales"
+
+  overrated: []
 
 # === EDUCATION ===
 
 education:
-  formal: []
-    # - institution: ""
-    #   degree: ""
-    #   field: ""
-    #   year: ""
+  formal:
+    - institution: "University at Buffalo (UB)"
+      degree: "Business Administration"
+      field: "Business"
+      year: null
+      notes: "Pivoted to software engineering"
 
-  self_taught: []
-    # - topic: ""
-    #   depth: surface|working|deep
-    #   source: ""  # books, courses, projects
+  self_taught:
+    - topic: "Software Engineering"
+      depth: deep
+      source: "Self-taught, projects"
 
   learning_now: []
-    # - topic: ""
-    #   why: ""
-    #   started: ""
 
 # === META ===
 
 meta:
-  confidence: speculative
-  last_validated: null
+  confidence: tentative
+  last_validated: "2024-12-09"

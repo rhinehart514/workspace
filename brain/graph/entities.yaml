@@ -591,3 +591,134 @@ entities:
       - codebase.hive
       - observation.institutional-distribution
     recommendation: "Upgrade belief.distribution-beats-product from tentative to grounded"
+
+  # === REVENUE-FOCUSED BELIEFS (2024-12-11) ===
+  # Load-bearing beliefs for revenue generation
+
+  - id: belief.revenue-is-oxygen
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Revenue"
+    content: "Revenue is oxygen. Everything else is decoration until you have paying customers."
+    confidence: hardened
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+    notes: "This is a load-bearing belief — guides all prioritization"
+
+  - id: belief.money-talks
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Revenue"
+    content: "Money talks, everything else walks. A customer saying 'I'd pay for that' means nothing until they actually pay."
+    confidence: hardened
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: belief.time-to-first-dollar
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Revenue"
+    content: "Time to first dollar is the most important metric for new ideas. Shorter is always better."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: belief.kill-fast
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Revenue"
+    content: "Kill ideas fast. Every hour on a non-monetizable idea is an hour not spent on one that could make money."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: belief.presell-before-build
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Revenue"
+    content: "Pre-sell before you build. If you can't get someone to pay before it exists, why would they pay after?"
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: belief.mrr-over-arr
+    type: belief
+    location: context/worldview/beliefs.md
+    section: "On Revenue"
+    content: "MRR beats one-time revenue. Recurring revenue compounds; one-time revenue requires constant sales."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  # === REVENUE ANTI-PATTERNS ===
+
+  - id: antipattern.build-first
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Building before validating willingness to pay. Building is fun, selling is hard — but selling first saves months of wasted effort."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: antipattern.free-tier-fantasy
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Planning a free tier before you have paying customers. Free users are not validation — they're cost centers."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: antipattern.revenue-later
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "'We'll monetize later after we get users.' Later never comes. If you can't charge now, you probably can't charge later."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: antipattern.sunk-cost-projects
+    type: antipattern
+    location: context/principles/what-to-avoid.md
+    content: "Continuing projects because of time already invested, not future revenue potential. Sunk costs are sunk — only future matters."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  # === REVENUE PRINCIPLES ===
+
+  - id: principle.who-pays
+    type: principle
+    location: context/principles/product-thinking.md
+    content: "First question for any idea: Who pays? Not 'who benefits' or 'who uses' — who writes the check?"
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: principle.path-to-1k
+    type: principle
+    location: context/principles/product-thinking.md
+    content: "Every idea needs a clear path to $1K MRR. If you can't articulate it, the idea isn't ready."
+    confidence: grounded
+    created: "2024-12-11"
+    last_validated: "2024-12-11"
+    source: revenue_focus
+
+  - id: principle.three-in-pipeline
+    type: principle
+    location: context/principles/product-thinking.md
+    content: "Always have 3 ideas in validation. Single-idea focus is fragile — diversify your bets until one wins."
+    confidence: tentative
+    created: "2024-12-11"
+    last_validated: null
+    source: revenue_focus

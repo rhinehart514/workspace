@@ -10,17 +10,28 @@ last_updated: "2024-12-09"
 
 stated:
   # What you say you want
-  primary: ""
-  secondary: []
+  primary: "Maximum revenue generation through idea execution"
+  secondary:
+    - "Build MRR machines — recurring revenue is oxygen"
+    - "Ship products that make money, not just products that work"
+    - "Validate ideas fast, kill slow ones faster"
 
   # Time horizon
-  this_week: []
-  this_month: []
-  this_quarter: []
-  this_year: []
+  this_week:
+    - "Identify one idea with clearest path to $1K MRR"
+    - "Validate willingness to pay before building"
+  this_month:
+    - "Launch MVP that can charge money on day 1"
+    - "Get first paying customer or kill the idea"
+  this_quarter:
+    - "Hit $5K MRR from at least one product"
+    - "Build idea pipeline — always 3 ideas in validation"
+  this_year:
+    - "Reach $10K+ MRR sustainable baseline"
+    - "Multiple revenue streams (diversification)"
 
   # Long-term
-  north_star: ""
+  north_star: "Financial independence through software — products that generate revenue while you sleep"
 
 # === REVEALED PREFERENCES ===
 
@@ -79,6 +90,338 @@ accountability:
     #   progress: none|some|significant
     #   blockers: []
     #   next_action: ""
+
+# === REVENUE FOCUS ===
+# The brain's primary filter for all decisions
+
+revenue_focus:
+  core_principle: "Every hour spent should have a line to revenue"
+
+  idea_evaluation_criteria:
+    - "Can this charge money on day 1? If not, why build it?"
+    - "Who pays? How much? How often?"
+    - "What's the path from 0 to $1K MRR?"
+    - "Does distribution exist or must it be built?"
+    - "Time to first dollar — shorter is better"
+
+  kill_signals:
+    - "Can't articulate who pays"
+    - "Requires platform scale to monetize"
+    - "Free tier makes sense (it usually doesn't)"
+    - "Revenue comes 'later' after growth"
+    - "Building features instead of selling"
+
+  prioritization:
+    always_ask: "Does this move MRR?"
+    daily_filter: "What's the most direct path to revenue today?"
+    weekly_review: "What generated revenue this week? What didn't?"
+
+  idea_pipeline:
+    status: "Active"
+    target: "Always 3 ideas in validation stage"
+    last_updated: "2024-12-11"
+
+    ideas:
+
+      # === IDEA 1: HIGHEST CONFIDENCE ===
+      - id: idea.001
+        name: "Local Business AI Ops Dashboard"
+        tagline: "AI that runs your small business operations — not chatbots, actual work"
+
+        who_pays: "Small business owners in Buffalo/WNY (restaurants, contractors, service businesses)"
+        how_much: "$149-299/mo"
+        why_now: "Small businesses are drowning in admin but can't afford employees. AI is finally good enough to actually DO tasks, not just chat."
+        why_you: "Business admin background + technical execution. You understand small business pain because you studied it. Buffalo network = warm leads."
+
+        the_product:
+          core: "Single dashboard that handles the 3 things every small business hates:"
+          workflows:
+            - "Invoice follow-up: Auto-drafts and sends payment reminders, tracks who owes what, escalates appropriately"
+            - "Review response: Monitors Google/Yelp, drafts responses in owner's voice, flags urgent issues"
+            - "Appointment/booking management: Handles rescheduling, no-shows, confirmations via SMS"
+          not_building:
+            - "Generic AI chatbot"
+            - "Another CRM"
+            - "Accounting software"
+
+        distribution:
+          strategy: "Direct to Buffalo businesses first — you can walk in and demo"
+          wedge: "Start with ONE workflow (invoice follow-up) for ONE vertical (contractors/trades)"
+          why_it_works: "Local = trust, referrals compound, you can iterate face-to-face"
+
+        context_moat: "Learns each business's voice, customer relationships, payment patterns. After 3 months, switching is painful."
+
+        mrr_math:
+          price: 199
+          customers_to_1k: 5
+          customers_to_5k: 25
+          customers_to_10k: 50
+
+        time_to_first_dollar: "2-3 weeks if you start selling TODAY"
+        validation_status: "Not started"
+        next_action: "Find 5 Buffalo contractors and ask: 'How much time do you spend chasing unpaid invoices? Would you pay $200/mo to never do that again?'"
+
+        confidence: high
+        rationale: |
+          - Aligns with belief.B2B-underrated
+          - Aligns with belief.distribution-beats-product (local = distribution)
+          - Aligns with pattern.single-workflow-context-flywheel
+          - You have the skills (full-stack, Firebase)
+          - You have the market access (Buffalo network)
+          - Problem is urgent and ongoing (not nice-to-have)
+
+      # === IDEA 2: HIGH CONFIDENCE ===
+      - id: idea.002
+        name: "Flutter Agency for AI Startups"
+        tagline: "You build their mobile app in 2 weeks, they pay premium"
+
+        who_pays: "AI startups that raised seed/Series A and need mobile apps fast"
+        how_much: "$15-25K per app (converts to ~$2-4K/mo retainer for updates)"
+        why_now: "Every AI startup needs mobile. Most AI founders are web-first. Flutter lets you ship cross-platform in 2 weeks. Speed is the differentiator."
+        why_you: "90% Flutter proficiency. Already built HIVE at scale. Portfolio ready."
+
+        the_product:
+          core: "Fixed-scope, fixed-price Flutter apps for AI startups"
+          offering:
+            - "2-week MVP: $15K — auth, core feature, basic AI integration"
+            - "4-week full app: $25K — production-ready, both platforms"
+            - "Ongoing retainer: $2-4K/mo for updates, maintenance, new features"
+          not_building:
+            - "Anything custom beyond Flutter"
+            - "Web apps (refer those out)"
+            - "Apps for non-AI companies (no leverage)"
+
+        distribution:
+          strategy: "Target AI startups on Twitter/X, ProductHunt launches, YC batches"
+          wedge: "Speed. '2 weeks to app store' is the hook."
+          why_it_works: "AI founders need mobile but don't want to hire. You're the fast path."
+
+        context_moat: "Not strong — this is service business. But converts to retainer MRR and builds reputation."
+
+        mrr_math:
+          base_projects: "2 projects/month = $30-50K"
+          retainer_conversion: "50% convert to retainer = $2-4K MRR per client"
+          year_1_mrr: "$10-20K MRR from retainers by end of year"
+
+        time_to_first_dollar: "1-2 weeks if you start outreach TODAY"
+        validation_status: "Not started"
+        next_action: "DM 10 AI founders who recently launched on ProductHunt: 'Saw your launch. Do you have a mobile app? I build Flutter apps for AI startups in 2 weeks.'"
+
+        confidence: high
+        rationale: |
+          - Immediate revenue (services)
+          - Converts to MRR (retainers)
+          - Uses strongest skill (Flutter 90%)
+          - Clear buyer (funded AI startups)
+          - Speed is real differentiator
+          - Builds network in AI space
+
+      # === IDEA 3: MEDIUM CONFIDENCE ===
+      - id: idea.003
+        name: "Claude/AI Context Starter Kits"
+        tagline: "Pre-built brain templates for specific use cases — ship your own AI workspace in 1 day"
+
+        who_pays: "Developers and technical founders who want Claude Code / AI-assisted workflows but don't want to build from scratch"
+        how_much: "$49-149 one-time (starter) or $29/mo for updates + community"
+        why_now: "AI coding assistants are mainstream but most people's CLAUDE.md is empty or bad. You've built a sophisticated brain system — productize it."
+        why_you: "You literally built this. The workspace brain is the product."
+
+        the_product:
+          core: "Downloadable context packages for specific use cases"
+          offerings:
+            - "Solopreneur Brain ($49): beliefs, goals, idea validation framework"
+            - "Agency Brain ($99): client management, project tracking, SOPs"
+            - "SaaS Founder Brain ($149): metrics, user feedback loops, feature prioritization"
+            - "Brain Builder Course ($299): how to build your own context system"
+          not_building:
+            - "Hosted platform (that's a thin wrapper)"
+            - "Generic templates (no value)"
+
+        distribution:
+          strategy: "Twitter/X content about 'context engineering' + Claude Code community"
+          wedge: "Free 'minimal viable brain' template as lead magnet"
+          why_it_works: "Developer audience, they share tools, word of mouth"
+
+        context_moat: "Weak for one-time purchase. Stronger if subscription includes community + updates."
+
+        mrr_math:
+          one_time: "100 sales at $99 = $9,900"
+          subscription: "50 subscribers at $29/mo = $1,450 MRR"
+          course: "20 students at $299 = $5,980"
+
+        time_to_first_dollar: "1 week — package what you have, put up Gumroad"
+        validation_status: "Not started"
+        next_action: "Post on Twitter: 'I built a 'brain' system for Claude Code that tracks beliefs, goals, and ideas. Would you pay $49 for a template version for [use case]?' See responses."
+
+        confidence: medium
+        rationale: |
+          - You already have the product (this workspace)
+          - Low effort to package
+          - Developer audience is reachable
+          - BUT: market size unclear
+          - BUT: one-time revenue unless subscription works
+          - Good as side income, not primary bet
+
+    # === IN-PERSON SALES: WALK IN, PITCH, CLOSE ===
+    # No marketing. No waiting. You go to them.
+
+    local_direct:
+
+      - id: idea.local.001
+        name: "Website Rebuilds for Local Businesses"
+        price: "$1,500-3,000 upfront + $99/mo hosting/maintenance"
+
+        target: "Any Buffalo business with a bad or no website"
+        verticals:
+          - "Restaurants — menus, online ordering, reservations"
+          - "Contractors — portfolio, quote requests, reviews"
+          - "Salons/barbers — booking, services, gallery"
+          - "Auto shops — services, appointments, trust signals"
+          - "Dentists/clinics — patient info, booking, insurance"
+
+        the_pitch: |
+          Walk in. Pull up their current site on your phone.
+          "Your website is costing you customers. I can fix it this week for $2,000
+          and you'll get more calls. Want to see what it could look like?"
+
+        why_they_pay:
+          - Their site looks like 2010 (or doesn't exist)
+          - They're losing to competitors with better sites
+          - They don't know how to fix it
+          - $2K is nothing if it brings 2-3 new customers
+
+        why_you_win:
+          - You can build fast (Next.js, templates, ship in days)
+          - You're local — they can meet you
+          - You understand business (BA background)
+          - No agency overhead = competitive price
+
+        week_1:
+          day_1: "Walk into 10 restaurants on Elmwood. Look at their sites first."
+          day_2: "Walk into 10 contractors/trades. Same pitch."
+          day_3: "Follow up with interested ones. Show mockup."
+          day_4-5: "Close first deal. Start building."
+          day_6-7: "Deliver. Get testimonial. Ask for referral."
+
+        scale_path: |
+          - First 5 clients = proof + testimonials
+          - Referrals from happy clients
+          - Niche down (become "the restaurant website guy")
+          - Hire junior to build, you just sell
+          - $99/mo × 50 clients = $4,950 MRR passive
+
+        first_dollar: "Day 3-5 (deposit on first deal)"
+
+      - id: idea.local.002
+        name: "Google Business Profile Optimization"
+        price: "$500 setup + $149/mo management"
+
+        target: "Local businesses not showing up in Google Maps"
+
+        the_pitch: |
+          "I searched '[their service] near me' and you're not in the top 3.
+          Your competitors are getting those calls. I can fix that for $500."
+
+        what_you_do:
+          - Optimize their Google Business Profile
+          - Get them reviews (systematic ask process)
+          - Post weekly updates
+          - Respond to reviews
+          - Add photos, services, Q&A
+
+        why_they_pay:
+          - Google Maps is how people find local businesses
+          - They don't know how to optimize it
+          - Top 3 results get 70% of clicks
+          - $149/mo is one extra customer
+
+        week_1:
+          day_1: "Search 'plumber buffalo' 'electrician buffalo' etc. Find businesses ranked 4-10."
+          day_2: "Walk into those businesses. Show them the search results."
+          day_3: "Close first 2-3 deals."
+          day_4-7: "Do the work. Document results."
+
+        scale_path: |
+          - 20 clients × $149/mo = $2,980 MRR
+          - Takes 2-3 hours/month per client once set up
+          - Hire VA to do the posting
+          - You just sell and onboard
+
+        first_dollar: "Day 2-3"
+
+      - id: idea.local.003
+        name: "Menu/Booking App for Restaurants"
+        price: "$2,500 setup + $199/mo"
+
+        target: "Restaurants paying DoorDash/UberEats 30% fees"
+
+        the_pitch: |
+          "How much did you pay DoorDash last month in fees? I'll build you
+          your own ordering system for $2,500. You keep 100% after that."
+
+        what_you_build:
+          - Mobile-friendly ordering site
+          - QR code menus
+          - Direct pickup/delivery orders
+          - Simple admin to manage menu
+          - Text notifications
+
+        why_they_pay:
+          - DoorDash takes 15-30% per order
+          - $2,500 pays for itself in 1-2 months
+          - They own their customer data
+          - No more fighting the algorithm
+
+        week_1:
+          day_1-2: "Visit 15 restaurants. Ask about delivery fees."
+          day_3: "Demo a template version. Close first deal."
+          day_4-6: "Build and deploy."
+          day_7: "Deliver. Get testimonial."
+
+        scale_path: |
+          - Template once, customize per client
+          - $199/mo × 30 restaurants = $5,970 MRR
+          - Becomes "the restaurant tech guy in Buffalo"
+          - Expands to other cities with same playbook
+
+        first_dollar: "Day 3-4 (deposit)"
+
+      - id: idea.local.004
+        name: "Review Generation System"
+        price: "$300 setup + $99/mo"
+
+        target: "Any local business with few Google reviews"
+
+        the_pitch: |
+          "You have 12 reviews. Your competitor has 87. Who do customers pick?
+          I'll get you 20+ real reviews in 30 days for $300."
+
+        what_you_do:
+          - Set up automated review request flow (SMS/email after service)
+          - Create QR code cards for in-person asks
+          - Train staff on when/how to ask
+          - Monitor and alert on new reviews
+          - Respond to all reviews
+
+        why_they_pay:
+          - Reviews = trust = customers
+          - They know they need reviews
+          - They don't have a system
+          - $99/mo is nothing for steady review flow
+
+        week_1:
+          day_1: "Find 20 businesses with <30 reviews but good service"
+          day_2: "Walk in with their Google listing pulled up. Make the pitch."
+          day_3: "Close 3-5 deals at $300 each = $900-1,500"
+          day_4-7: "Set up systems. Show early results."
+
+        scale_path: |
+          - 50 clients × $99/mo = $4,950 MRR
+          - System is mostly automated after setup
+          - Combine with Google optimization (idea.local.002)
+          - Bundle = $199/mo
+
+        first_dollar: "Day 2-3"
 
 # === META ===
 

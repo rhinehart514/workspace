@@ -1,8 +1,8 @@
 {
   "version": "4.0",
   "initialized": "2024-12-06",
-  "last_activity": "2025-12-09",
-  "architecture": "proactive-human-aware",
+  "last_activity": "2025-12-11",
+  "architecture": "revenue-focused-proactive",
   "agents": {
     "reflection": {
       "last_run": "2024-12-07",
@@ -70,18 +70,14 @@
     "next_action": "Import LinkedIn data to populate network"
   },
   "pending_attention": [
-    "HUMAN LAYER: Import LinkedIn data to populate network (suggest.004)",
-    "HIVE challenges belief.small-is-underrated (rel.044) — needs exploration",
-    "Consider upgrading belief.distribution-beats-product to grounded (synthesis recommendation)",
-    "thread.puckcast is STALE — needs decision: continue, pivot, or kill",
-    "Calculate actual ROI after vig for Puckcast (rel.026)",
-    "Find examples of mid-size businesses restructured with AI (rel.040)",
-    "Document translation layer businesses that work (rel.041)",
-    "HIVE: Validate campus pipeline and sales cycle (judgment.002)",
-    "HIVE: Clarify revenue model (judgment.002)",
-    "Explore HiveLab engine as separate API product (rel.050)"
+    "Walk into 10 Buffalo businesses tomorrow. Pitch website rebuilds.",
+    "Google Business Profile optimization — easiest close, fastest money",
+    "Review generation — $300 setup, close 3-5 in a day",
+    "Kill Puckcast"
   ],
   "recent_changes": [
+    "2025-12-11: Local direct sales ideas added — walk in, pitch, close same week",
+    "2025-12-11: Website rebuilds, Google optimization, review systems, restaurant apps",
     "2025-12-09: Full human intelligence layer complete",
     "2025-12-09: New pattern detection: trust_patterns, energy_patterns, positive_negative_insights, blind_spot_detection",
     "2025-12-09: Created run_all.py: full report, quick summary, meeting briefs, action items",
@@ -135,15 +131,15 @@
     "action_item_generation": true
   },
   "design_principles": {
-    "session_opening": "brain speaks first — surfaces agenda before asking user",
+    "revenue_primacy": "MRR is oxygen — every session starts and ends with revenue check",
+    "session_opening": "brain speaks first — surfaces revenue priorities before anything else",
+    "idea_validation": "presell before build — money talks, everything else walks",
+    "kill_fast": "ideas without path to revenue get killed, not shelved",
     "contradiction_handling": "real-time flagging, not deferred to reflection",
     "context_loading": "embedded in CLAUDE.md + project files for code work",
-    "agenda_ownership": "system drives priorities, user responds",
-    "code_awareness": "project files track decisions, conventions, debt",
+    "agenda_ownership": "system drives priorities through revenue lens",
     "prediction_accountability": "falsifiable claims with resolution dates",
-    "tool_hygiene": "track what exists, what's used, what's abandoned",
-    "human_awareness": "brain knows your network, patterns, goals — not just beliefs",
-    "network_proactivity": "surfaces stale relationships and relevant connections"
+    "human_awareness": "brain knows your network as distribution/customer opportunities"
   },
   "stale_threads": ["thread.puckcast"],
   "upcoming_predictions": {

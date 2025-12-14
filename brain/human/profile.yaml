@@ -9,64 +9,81 @@ last_updated: "2024-12-09"
 # === IDENTITY ===
 
 identity:
-  name: ""
-  location: ""
-  current_role: ""
+  name: "Jacob Rhinehart"
+  location: "Buffalo, NY"
+  current_role: "Founder / Software Engineer"
 
 # === BACKGROUND ===
 
 background:
-  summary: ""  # 2-3 sentence bio
-  origin_story: ""  # How you got here
+  summary: "Software engineer who came from business admin. Combines entrepreneurial thinking with technical execution. Focus: vertical AI SaaS."
+  origin_story: "Started as business admin student at University at Buffalo, discovered coding, pivoted to engineering. The business background informs product thinking — understands problems before building solutions."
 
 # === STRENGTHS ===
 
 strengths:
   # What you know you're good at
-  known: []
+  known:
+    - "Full-stack execution — can ship end-to-end"
+    - "Flutter/mobile development (90% proficiency)"
+    - "TypeScript/React web development"
+    - "Product thinking from business background"
+    - "Building for real users, not abstractions"
 
   # What you're better at than you think (others see it, you don't)
-  hidden: []
+  hidden: []  # To be discovered through feedback
 
 # === WEAKNESSES ===
 
 weaknesses:
   # What you know you struggle with
-  known: []
+  known: []  # To be populated
 
   # What you don't see about yourself (blind spots)
-  blind_spots: []
+  blind_spots: []  # To be discovered
 
 # === PATTERNS ===
 
 patterns:
   # When/how you do your best work
   productive:
-    # - "Deep work in mornings"
-    # - "Better at starting than finishing"
-    # - "Need external deadlines"
+    - "Builds real things, not just plans"
+    - "Community-focused — cares about Buffalo, UB, local impact"
 
   # Failure modes, avoidance patterns
-  destructive:
-    # - "Over-engineer when anxious"
-    # - "Avoid sales conversations"
-    # - "Scope creep on exciting projects"
+  destructive: []  # To be discovered
 
 # === OPTIMIZATION ===
 
 optimization:
   # What you say you want
-  stated: ""
+  stated: "Maximum revenue through idea execution — MRR is oxygen"
 
   # What your behavior suggests you want
-  revealed: ""
+  revealed: "To be discovered through tracking actual time allocation"
 
   # The gap between them
-  delta: ""
+  delta: "To be discovered — watch for: building without validation, features without customers, time on non-revenue activities"
+
+  # Revenue focus
+  revenue_lens:
+    primary_metric: "MRR"
+    secondary_metrics:
+      - "Time to first dollar"
+      - "Ideas in validation pipeline"
+      - "Customer conversations per week"
+
+    daily_question: "What's the most direct path to revenue today?"
+    weekly_review: "What generated revenue this week? What didn't? Why?"
+
+    filters:
+      before_building: "Can this charge money on day 1?"
+      before_features: "Is a paying customer asking for this?"
+      before_continuing: "Is there a clear path to $1K MRR?"
 
 # === META ===
 
 meta:
-  confidence: speculative
-  last_validated: null
-  notes: "To be populated through onboarding conversation"
+  confidence: tentative
+  last_validated: "2024-12-09"
+  notes: "Initial profile from jacobrhinehart.com. Needs enrichment through conversation."
