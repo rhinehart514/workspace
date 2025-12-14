@@ -47,9 +47,9 @@
     }
   },
   "human_layer": {
-    "status": "initialized",
-    "last_import": null,
-    "network_populated": false,
+    "status": "active",
+    "last_import": "2025-12-14",
+    "network_populated": true,
     "profile_populated": false,
     "files": {
       "profile": "_brain/human/profile.yaml",
@@ -76,6 +76,8 @@
     "Kill Puckcast"
   ],
   "recent_changes": [
+    "2025-12-14: Network populated with Jacob Rhinehart + Noah Owsiany — opinionated profiles with strategic assessments",
+    "2025-12-14: Added future_proof_score and collaboration opportunities to network connections",
     "2025-12-11: Local direct sales ideas added — walk in, pitch, close same week",
     "2025-12-11: Website rebuilds, Google optimization, review systems, restaurant apps",
     "2025-12-09: Full human intelligence layer complete",

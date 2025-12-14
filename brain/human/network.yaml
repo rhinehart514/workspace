@@ -4,12 +4,174 @@
 
 version: "1.0"
 created: "2024-12-09"
-last_updated: "2024-12-09"
-source: null  # Will be set to "linkedin_export" after first import
+last_updated: "2025-12-14"
+source: "manual_research"
 
 # === CONNECTIONS ===
 
-connections: []
+connections:
+  - id: conn.jacob-rhinehart
+    name: "Jacob Rhinehart"
+
+    # From research:
+    email: null
+    company: "HIVE / Obito Digital"
+    position: "Founder & CEO (HIVE), Connected to Obito Digital"
+    university: "University at Buffalo"
+    graduation: "2025"
+
+    # Relationship:
+    relationship_strength: warm
+    context: "UB student entrepreneur, co-founder of HIVE platform"
+
+    # Domains & asks:
+    domains:
+      - student-platforms
+      - edtech
+      - digital-marketing
+      - startup-leadership
+      - buffalo-startup-ecosystem
+    can_ask_for:
+      - "UB student market insights"
+      - "Buffalo startup scene connections"
+      - "Digital marketing execution"
+      - "Platform product feedback"
+    introduces_to:
+      - "UB entrepreneur network"
+      - "Buffalo Niagara Partnership"
+      - "Panasci TEC competition circle"
+
+    # === OPINIONS (OPINIONATED ASSESSMENT) ===
+
+    positives:
+      - "Hustle mentality — running multiple ventures simultaneously"
+      - "Platform thinking — not just building features, building ecosystems"
+      - "Leadership proven — RHA President, Orientation Team Leader, GA role"
+      - "Competes and ships — Panasci TEC finalist, HIVE actually launched"
+      - "Distribution instinct — understands community building"
+
+    negatives:
+      - "Spread thin — HIVE + Obito Digital + grad assistantship + RHA = too many plates"
+      - "HIVE is a graveyard category — student social platforms fail 95% of the time (Yik Yak, etc.)"
+      - "B2B2C university sales is brutal — long cycles, committee decisions, budget constraints"
+      - "May be building resume rather than building wealth"
+      - "Obito Digital positioning unclear — agency work is time-for-money trap"
+
+    trust_level: medium
+    energy: energizing
+
+    # === STRATEGIC ASSESSMENT ===
+    revenue_potential: medium
+    scale_potential: medium
+    collaboration_fit: high
+
+    strategic_notes: |
+      Jacob has hustle but may be chasing the wrong target with HIVE.
+
+      HIVE PROBLEM: Student platforms are a graveyard. Universities are slow buyers.
+      Students churn every 4 years. Monetization is brutal (students have no money,
+      universities have no budget). This is a "sounds good, makes no money" trap.
+
+      BETTER PLAY: Obito Digital or a joint local business play.
+      His marketing skills + platform ambition could be redirected to:
+      - Local business SaaS (not students — businesses that pay)
+      - Agency-to-productized-service transition
+      - Buffalo B2B market where relationships actually close deals
+
+      PUSH HIM ON: "How does HIVE make money? Who has paid you?"
+      If no answer → kill HIVE, double down on Obito or new venture.
+
+    future_proof_score: 5/10  # HIVE concept could be AI-disrupted; pure platform play is 2020 thinking
+
+    last_contact: null
+    contact_frequency: null
+
+  - id: conn.noah-owsiany
+    name: "Noah Owsiany"
+
+    # From research:
+    email: "noahowsh@gmail.com"
+    company: "OWSH Unlimited / HIVE"
+    position: "Founder (OWSH Unlimited), COO (HIVE)"
+    university: "University at Buffalo"
+    graduation: "2025 (undergrad), pursuing MS Business Analytics"
+    website: "https://www.noahowsh.com/"
+
+    # Relationship:
+    relationship_strength: warm
+    context: "UB student entrepreneur, co-founder of HIVE, runs web design agency"
+
+    # Domains & asks:
+    domains:
+      - web-design
+      - local-seo
+      - framer
+      - small-business-services
+      - event-photography
+      - business-analytics
+      - buffalo-startup-ecosystem
+    can_ask_for:
+      - "Framer expertise"
+      - "Local SEO playbook"
+      - "Small business client acquisition tactics"
+      - "Buffalo local business market intel"
+      - "Analytics implementation"
+    introduces_to:
+      - "Local Buffalo business owners (his clients)"
+      - "Prentice Foundation network"
+      - "UB startup bootcamp mentors"
+
+    # === OPINIONS (OPINIONATED ASSESSMENT) ===
+
+    positives:
+      - "Actually making money — OWSH Unlimited has paying clients"
+      - "Smart model — free build + monthly recurring = low friction, sticky revenue"
+      - "Framer expert listing — hot skill, premium positioning"
+      - "Grounded in reality — selling to SMBs, not chasing unicorns"
+      - "Analytics + design combo — can offer data-driven services, not just pretty websites"
+      - "Prentice Foundation Fellow — external validation, network access"
+
+    negatives:
+      - "Agency trap risk — trading time for money, hard to scale"
+      - "HIVE distraction — COO role splits focus from revenue-generating OWSH"
+      - "Local SEO is commoditizing — need differentiation beyond 'we do everything'"
+      - "May undervalue services — 'free website' positioning attracts price-sensitive clients"
+
+    trust_level: medium
+    energy: energizing
+
+    # === STRATEGIC ASSESSMENT ===
+    revenue_potential: high
+    scale_potential: high
+    collaboration_fit: very-high
+
+    strategic_notes: |
+      Noah is closer to the money. OWSH Unlimited is a real business.
+
+      WHAT'S WORKING:
+      - Free website build → monthly recurring is SMART. Low barrier, sticky.
+      - Local SEO + Google Business Profile = exactly what local businesses need
+      - Framer expertise is differentiated — faster, cheaper, better than WordPress
+
+      SCALE PATH (where he should go):
+      1. Productize the service — turn "done for you" into "done with you" templates
+      2. Niche down HARD — "OWSH for dentists" or "OWSH for contractors"
+      3. Build once, sell many — Framer templates + local SEO playbook as products
+      4. Add AI layer — automated reporting, content generation, review responses
+
+      PUSH HIM ON:
+      - "What's your MRR from OWSH? Can you 10x it without 10x-ing your time?"
+      - "Drop the HIVE COO title. Focus. OWSH is the play."
+      - "Who's your best customer? Clone them. Ignore everyone else."
+
+      COLLABORATION OPPORTUNITY:
+      His local SMB expertise + web/SEO skills could combine with AI automation
+      for a "Local Business AI Ops" play. This aligns with brain's idea.001.
+
+    future_proof_score: 7/10  # Service business adapts; Framer skill stays relevant; analytics adds defensibility
+
+    last_contact: null
+    contact_frequency: null
   # Each connection has this structure:
   # - id: conn.firstname-lastname
   #   name: "First Last"
@@ -60,12 +222,19 @@ connections: []
 # === STATS (Auto-computed) ===
 
 stats:
-  total: 0
+  total: 2
   by_relationship:
     cold: 0
-    warm: 0
+    warm: 2
     close: 0
-  by_domain: {}
+  by_domain:
+    buffalo-startup-ecosystem: 2
+    web-design: 1
+    local-seo: 1
+    student-platforms: 1
+    digital-marketing: 1
+    framer: 1
+    business-analytics: 1
   stale_relationships: []  # No contact in 6+ months
 
 # === NETWORK GAPS ===
