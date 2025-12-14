@@ -15,18 +15,47 @@ connections:
 
     # From research:
     email: null
-    company: "HIVE / Obito Digital"
+    company: "HIVE / Obito Digital / BizDot Buffalo"
     position: "Founder & CEO (HIVE), Connected to Obito Digital"
     university: "University at Buffalo"
+    degree: "BS Business Administration, School of Management"
     graduation: "2025"
+
+    # Timeline:
+    timeline:
+      - "May 2023: Founded HIVE with Eleanora Undrus"
+      - "June 2023: Jordan Wang joins as backend developer"
+      - "2024: RHA President at UB"
+      - "2024: Panasci TEC finalist (didn't win, Empasta took 1st)"
+      - "2024: Orientation Team Leader at UB"
+      - "2024: Graduate assistantship at St. Bonaventure Student Success Center"
+      - "2025: Panasci TEC semifinalist (13 of 41 teams)"
+      - "2025: HIVE pivoting to AI builder for campus communities"
+
+    # Technical team (HIVE):
+    hive_team:
+      - name: "Eleanora Undrus"
+        role: "Technical Co-founder"
+        background: "BS/BA Computer Science & Mathematics, UB"
+        recruited: "Friend, late-night O'Brian whiteboard sessions"
+      - name: "Jordan Wang"
+        role: "Backend Developer"
+        background: "Senior Computer Engineering, UB"
+        recruited: "UB Hacking hackathon 2022"
+      - name: "Noah Owsiany"
+        role: "COO"
+        background: "Business Administration, Entrepreneurship"
+      - name: "Rachana Ramesh"
+        role: "Software Developer Intern"
 
     # Relationship:
     relationship_strength: warm
-    context: "UB student entrepreneur, co-founder of HIVE platform"
+    context: "UB student entrepreneur, founder of HIVE platform"
 
     # Domains & asks:
     domains:
-      - student-platforms
+      - ai-builder-platforms
+      - campus-infrastructure
       - edtech
       - digital-marketing
       - startup-leadership
@@ -36,52 +65,66 @@ connections:
       - "Buffalo startup scene connections"
       - "Digital marketing execution"
       - "Platform product feedback"
+      - "Campus org pain points"
     introduces_to:
       - "UB entrepreneur network"
       - "Buffalo Niagara Partnership"
       - "Panasci TEC competition circle"
+      - "UB CoLab / Blackstone LaunchPad"
 
     # === OPINIONS (OPINIONATED ASSESSMENT) ===
 
     positives:
-      - "Hustle mentality — running multiple ventures simultaneously"
-      - "Platform thinking — not just building features, building ecosystems"
-      - "Leadership proven — RHA President, Orientation Team Leader, GA role"
-      - "Competes and ships — Panasci TEC finalist, HIVE actually launched"
+      - "Persistent — Panasci 2024 loss, came back for 2025 as semifinalist"
+      - "Has real technical co-founders (Undrus in CS/Math, Wang in CompE)"
+      - "Platform thinking — building infrastructure, not just features"
+      - "Leadership proven — RHA President, Orientation Leader, GA role"
       - "Distribution instinct — understands community building"
+      - "HIVE pivot to AI builder is MUCH smarter than social platform"
 
     negatives:
-      - "Spread thin — HIVE + Obito Digital + grad assistantship + RHA = too many plates"
-      - "HIVE is a graveyard category — student social platforms fail 95% of the time (Yik Yak, etc.)"
-      - "B2B2C university sales is brutal — long cycles, committee decisions, budget constraints"
-      - "May be building resume rather than building wealth"
-      - "Obito Digital positioning unclear — agency work is time-for-money trap"
+      - "Spread thin — HIVE + Obito + BizDot + GA + RHA = too many plates"
+      - "2 years in, still no clear revenue (Panasci semifinalist ≠ revenue)"
+      - "University sales still brutal even for AI tools"
+      - "Risk: building features, not a business"
+      - "Obito Digital positioning unclear — agency distraction?"
 
     trust_level: medium
     energy: energizing
 
     # === STRATEGIC ASSESSMENT ===
-    revenue_potential: medium
-    scale_potential: medium
+    revenue_potential: medium-high  # UPGRADED if AI builder pivot is real
+    scale_potential: high  # UPGRADED — infrastructure > social app
     collaboration_fit: high
 
     strategic_notes: |
-      Jacob has hustle but may be chasing the wrong target with HIVE.
+      UPDATED ASSESSMENT: HIVE pivot to "AI builder for campus communities" changes everything.
 
-      HIVE PROBLEM: Student platforms are a graveyard. Universities are slow buyers.
-      Students churn every 4 years. Monetization is brutal (students have no money,
-      universities have no budget). This is a "sounds good, makes no money" trap.
+      OLD HIVE (student social platform):
+      - Graveyard category. Yik Yak, etc. all failed.
+      - Students have no money. Universities have no budget.
+      - This was a "sounds good, makes no money" trap.
 
-      BETTER PLAY: Obito Digital or a joint local business play.
-      His marketing skills + platform ambition could be redirected to:
-      - Local business SaaS (not students — businesses that pay)
-      - Agency-to-productized-service transition
-      - Buffalo B2B market where relationships actually close deals
+      NEW HIVE (AI builder infrastructure):
+      - "Zapier/Retool for campus orgs" is a real value prop
+      - Buyer = club admins, student orgs, university departments (have budget)
+      - AI layer = defensible, not just another social app
+      - Infrastructure play ages better than engagement metrics game
 
-      PUSH HIM ON: "How does HIVE make money? Who has paid you?"
-      If no answer → kill HIVE, double down on Obito or new venture.
+      REMAINING QUESTIONS:
+      1. Is anyone PAYING for HIVE yet? Competition success ≠ revenue.
+      2. What exactly can orgs BUILD with HIVE? (workflows? bots? automations?)
+      3. Who is the 10x user — the club admin who can't live without it?
+      4. Can this work beyond UB? (single-campus trap is real)
 
-    future_proof_score: 5/10  # HIVE concept could be AI-disrupted; pure platform play is 2020 thinking
+      PUSH HIM ON:
+      - "Show me one org that built something with HIVE and got value"
+      - "What's the revenue model — per-org? per-university? freemium?"
+      - "Why won't Notion AI or Claude just eat this?"
+
+      THE REAL TEST: Does HIVE make money by April 2025 (post-Panasci)?
+
+    future_proof_score: 7/10  # UPGRADED — AI builder ages better than social platform
 
     last_contact: null
     contact_frequency: null
@@ -92,50 +135,76 @@ connections:
     # From research:
     email: "noahowsh@gmail.com"
     company: "OWSH Unlimited / HIVE"
-    position: "Founder (OWSH Unlimited), COO (HIVE)"
+    position: "Founder & CEO (OWSH Unlimited), COO (HIVE)"
     university: "University at Buffalo"
-    graduation: "2025 (undergrad), pursuing MS Business Analytics"
+    degree: "BS Business Administration, Entrepreneurship concentration"
+    graduation: "2025 (undergrad), pursuing MS Data Science"
     website: "https://www.noahowsh.com/"
+
+    # Timeline:
+    timeline:
+      - "Started at UB Startup and Innovation Collaboratory (content creation + photography)"
+      - "Built social media portfolio — 250 million impressions across campaigns"
+      - "Founded OWSH Unlimited — web design + local SEO for SMBs"
+      - "Joined HIVE as COO alongside Jacob Rhinehart"
+      - "2024: Prentice Foundation Fellow ($25k scholarship)"
+      - "2024: Google Advanced Data Analytics certification (Python, TikTok data)"
+      - "2025: Listed on Framer Experts marketplace"
+      - "2025: Pursuing MS in Data Science to merge analytics + entrepreneurship"
+
+    # Credentials:
+    credentials:
+      - "Prentice Foundation Fellow — up to $25k scholarship for WNY entrepreneurs"
+      - "Framer Expert — listed on official Framer marketplace"
+      - "Google Advanced Data Analytics certified"
+      - "250M+ social media impressions (consulting background)"
 
     # Relationship:
     relationship_strength: warm
-    context: "UB student entrepreneur, co-founder of HIVE, runs web design agency"
+    context: "UB student entrepreneur, COO of HIVE, runs web design agency"
 
     # Domains & asks:
     domains:
       - web-design
-      - local-seo
       - framer
+      - local-seo
+      - google-business-profile
+      - social-media-marketing
+      - data-analytics
+      - python
       - small-business-services
       - event-photography
-      - business-analytics
       - buffalo-startup-ecosystem
     can_ask_for:
-      - "Framer expertise"
-      - "Local SEO playbook"
+      - "Framer expertise — he's a listed expert"
+      - "Local SEO / GBP optimization playbook"
+      - "Social media strategy (250M impressions background)"
       - "Small business client acquisition tactics"
       - "Buffalo local business market intel"
-      - "Analytics implementation"
+      - "Data analytics implementation (Python, Google cert)"
     introduces_to:
-      - "Local Buffalo business owners (his clients)"
+      - "Local Buffalo business owners (his OWSH clients)"
       - "Prentice Foundation network"
-      - "UB startup bootcamp mentors"
+      - "UB Startup Bootcamp mentors and judges"
+      - "WNY event ecosystem (photography connections)"
 
     # === OPINIONS (OPINIONATED ASSESSMENT) ===
 
     positives:
-      - "Actually making money — OWSH Unlimited has paying clients"
-      - "Smart model — free build + monthly recurring = low friction, sticky revenue"
-      - "Framer expert listing — hot skill, premium positioning"
-      - "Grounded in reality — selling to SMBs, not chasing unicorns"
-      - "Analytics + design combo — can offer data-driven services, not just pretty websites"
-      - "Prentice Foundation Fellow — external validation, network access"
+      - "Actually making money — OWSH Unlimited has paying clients NOW"
+      - "Smart model — free website build + monthly recurring = low friction, sticky"
+      - "Framer Expert listing — hot skill, premium positioning, marketplace lead gen"
+      - "250M impressions = real marketing chops, not just theory"
+      - "Data analytics skill developing — Python + Google cert = not just 'creative guy'"
+      - "Prentice Fellow — external validation, $25k support, network access"
+      - "Grounded — selling to SMBs who pay, not chasing unicorn dreams"
 
     negatives:
-      - "Agency trap risk — trading time for money, hard to scale"
-      - "HIVE distraction — COO role splits focus from revenue-generating OWSH"
-      - "Local SEO is commoditizing — need differentiation beyond 'we do everything'"
-      - "May undervalue services — 'free website' positioning attracts price-sensitive clients"
+      - "Agency trap risk — trading time for money, hard to scale past himself"
+      - "HIVE COO role may be splitting focus from OWSH (which is actually making money)"
+      - "Local SEO is commoditizing — needs AI/automation moat"
+      - "'Free website' positioning may attract price-sensitive clients"
+      - "MS in Data Science = more school, less shipping?"
 
     trust_level: medium
     energy: energizing
@@ -146,29 +215,42 @@ connections:
     collaboration_fit: very-high
 
     strategic_notes: |
-      Noah is closer to the money. OWSH Unlimited is a real business.
+      Noah is the most "ready to make money NOW" person in this network.
 
       WHAT'S WORKING:
-      - Free website build → monthly recurring is SMART. Low barrier, sticky.
-      - Local SEO + Google Business Profile = exactly what local businesses need
+      - OWSH Unlimited = real business with real clients
+      - Free build → monthly recurring is SMART acquisition model
       - Framer expertise is differentiated — faster, cheaper, better than WordPress
+      - 250M impressions background = credibility for marketing services
+      - Data analytics skill = can offer "data-driven" positioning to SMBs
 
-      SCALE PATH (where he should go):
-      1. Productize the service — turn "done for you" into "done with you" templates
-      2. Niche down HARD — "OWSH for dentists" or "OWSH for contractors"
-      3. Build once, sell many — Framer templates + local SEO playbook as products
-      4. Add AI layer — automated reporting, content generation, review responses
+      WHY HIVE COO MIGHT MAKE SENSE NOW:
+      - If HIVE is pivoting to AI builder, Noah's analytics + web skills fit
+      - COO of infrastructure company > COO of social app
+      - Could be building skills/equity while OWSH generates cash
+
+      SCALE PATH FOR NOAH:
+      1. Productize OWSH — Framer templates + local SEO playbook as digital products
+      2. Niche down — "OWSH for contractors" or "OWSH for restaurants"
+      3. Add AI layer — automated reporting, review responses, content gen
+      4. Let HIVE be the moonshot, OWSH be the cash machine
+
+      THE BIG QUESTION:
+      Is pursuing MS in Data Science the right move, or should he be shipping?
+      - Pro: Analytics + AI skills compound value
+      - Con: 2 more years of school vs. building OWSH into $50k MRR
+
+      COLLABORATION OPPORTUNITIES:
+      1. OWSH + AI automation = "Local Business AI Ops" (brain's idea.001)
+      2. His Framer templates + your distribution = productized service play
+      3. Buffalo local business market — he has client relationships, trust
 
       PUSH HIM ON:
-      - "What's your MRR from OWSH? Can you 10x it without 10x-ing your time?"
-      - "Drop the HIVE COO title. Focus. OWSH is the play."
-      - "Who's your best customer? Clone them. Ignore everyone else."
+      - "What's your MRR from OWSH right now?"
+      - "Can you 10x revenue without 10x-ing your time?"
+      - "What would it take to make OWSH your full focus?"
 
-      COLLABORATION OPPORTUNITY:
-      His local SMB expertise + web/SEO skills could combine with AI automation
-      for a "Local Business AI Ops" play. This aligns with brain's idea.001.
-
-    future_proof_score: 7/10  # Service business adapts; Framer skill stays relevant; analytics adds defensibility
+    future_proof_score: 8/10  # Analytics + AI skills + service business = adapts well
 
     last_contact: null
     contact_frequency: null
