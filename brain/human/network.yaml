@@ -16,10 +16,38 @@ connections:
     # From research:
     email: null
     company: "HIVE / Obito Digital / BizDot Buffalo"
-    position: "Founder & CEO (HIVE), Connected to Obito Digital"
+    position: "Founder & CEO (HIVE)"
     university: "University at Buffalo"
     degree: "BS Business Administration, School of Management"
     graduation: "2025"
+
+    # Background (deep research):
+    origin: "Likely from Portville/Cattaraugus County area (rural WNY)"
+    family_note: "Possible relative: Emma Rhinehart (Portville HS basketball star, 2024-25)"
+
+    # Leadership roles:
+    leadership:
+      - "RHA President, University at Buffalo (2024-2025)"
+      - "Orientation Team Leader, UB"
+      - "Graduate Assistant, St. Bonaventure Student Success Center"
+      - "Mentor at UB Startup Bootcamp"
+      - "Involved with UB MBA Consulting Group"
+
+    # Ventures (detailed):
+    ventures:
+      hive:
+        role: "Founder & CEO"
+        founded: "May 2023"
+        pivot: "AI builder for campus communities (2025)"
+        status: "Pre-revenue, competing for $65k prize April 2025"
+      obito_digital:
+        role: "Connected (unclear capacity)"
+        location: "505 Ellicott St, Buffalo"
+        services: "Paid ads, CRO, landing pages, AI products, recruiting"
+        note: "Member of Buffalo Niagara Partnership"
+      bizdot_buffalo:
+        role: "Connected"
+        note: "Welcomed student interns Fall 2024"
 
     # Timeline:
     timeline:
@@ -37,11 +65,12 @@ connections:
       - name: "Eleanora Undrus"
         role: "Technical Co-founder"
         background: "BS/BA Computer Science & Mathematics, UB"
+        origin: "Shoreham-Wading River, Long Island (former track athlete, 5'10)"
         recruited: "Friend, late-night O'Brian whiteboard sessions"
       - name: "Jordan Wang"
         role: "Backend Developer"
         background: "Senior Computer Engineering, UB"
-        recruited: "UB Hacking hackathon 2022"
+        recruited: "UB Hacking hackathon 2022 (recruited by Undrus)"
       - name: "Noah Owsiany"
         role: "COO"
         background: "Business Administration, Entrepreneurship"
@@ -138,8 +167,35 @@ connections:
     position: "Founder & CEO (OWSH Unlimited), COO (HIVE)"
     university: "University at Buffalo"
     degree: "BS Business Administration, Entrepreneurship concentration"
-    graduation: "2025 (undergrad), pursuing MS Data Science"
+    graduation: "Spring 2025"
+    next_degree: "MS Data Science (pursuing)"
     website: "https://www.noahowsh.com/"
+    calendly: "Available on website for consultations"
+
+    # OWSH Unlimited (detailed):
+    owsh_unlimited:
+      website: "https://owshunlimited.com/"
+      service: "All-in-one web + local SEO for small businesses"
+      model: "Free website build → monthly recurring"
+      features:
+        - "High-performance Framer websites"
+        - "Local SEO + rank tracking (100+ directories)"
+        - "Google Business Profile optimization"
+        - "Managed hosting with daily backups"
+        - "Monthly analytics + edits + visibility reports"
+      guarantee: "21-day go-live"
+      target: "Local service businesses in Buffalo"
+
+    # Work history:
+    work_history:
+      - role: "Content Creator + Photographer"
+        org: "UB Startup and Innovation Collaboratory"
+        note: "Where his photography journey started"
+      - role: "Social Media Consultant"
+        achievement: "250M+ impressions across campaigns"
+      - role: "Event Photographer"
+        coverage: "Western New York startup events"
+        recognition: "Called out by community for capturing moments"
 
     # Timeline:
     timeline:
