@@ -38,8 +38,9 @@ connections:
       hive:
         role: "Founder & CEO"
         founded: "May 2023"
-        pivot: "AI builder for campus communities (2025)"
-        status: "Pre-revenue, competing for $65k prize April 2025"
+        current: "AI builder for campus communities"
+        panasci_2025: "Semifinalist (didn't place — SATE won)"
+        status: "Active development"
       obito_digital:
         role: "Connected (unclear capacity)"
         location: "505 Ellicott St, Buffalo"
@@ -48,6 +49,16 @@ connections:
       bizdot_buffalo:
         role: "Connected"
         note: "Welcomed student interns Fall 2024"
+
+    # Skills:
+    skills:
+      technical:
+        - "Software development"
+        - "Building products"
+      business:
+        - "Platform strategy"
+        - "Campus/university market"
+        - "Digital marketing"
 
     # Timeline:
     timeline:
@@ -127,31 +138,33 @@ connections:
     collaboration_fit: high
 
     strategic_notes: |
-      UPDATED ASSESSMENT: HIVE pivot to "AI builder for campus communities" changes everything.
+      STATUS: December 2025 — actively building, can code, shipping projects.
 
-      OLD HIVE (student social platform):
-      - Graveyard category. Yik Yak, etc. all failed.
-      - Students have no money. Universities have no budget.
-      - This was a "sounds good, makes no money" trap.
+      PANASCI 2025 RESULT:
+      - Semifinalist (13 of 41), didn't place in finals
+      - SATE (AI speech analysis) won first place
+      - Not a failure — competition validated the pivot, didn't win prize money
 
-      NEW HIVE (AI builder infrastructure):
-      - "Zapier/Retool for campus orgs" is a real value prop
-      - Buyer = club admins, student orgs, university departments (have budget)
-      - AI layer = defensible, not just another social app
-      - Infrastructure play ages better than engagement metrics game
+      HIVE AS AI BUILDER:
+      - "Zapier/Retool for campus orgs" is the thesis
+      - Can they ship fast enough to matter?
+      - University market is slow but sticky if you get in
 
-      REMAINING QUESTIONS:
-      1. Is anyone PAYING for HIVE yet? Competition success ≠ revenue.
-      2. What exactly can orgs BUILD with HIVE? (workflows? bots? automations?)
-      3. Who is the 10x user — the club admin who can't live without it?
-      4. Can this work beyond UB? (single-campus trap is real)
+      WHAT MATTERS NOW (Dec 2025):
+      1. What are you building RIGHT NOW?
+      2. Is HIVE the focus or something new?
+      3. Revenue status — any paying customers yet?
+      4. What's the stack? What can you ship in a weekend?
 
-      PUSH HIM ON:
-      - "Show me one org that built something with HIVE and got value"
-      - "What's the revenue model — per-org? per-university? freemium?"
-      - "Why won't Notion AI or Claude just eat this?"
+      BUILDER ASSESSMENT:
+      - Can code = can ship fast
+      - Small team with technical skills = dangerous in a good way
+      - Question: Are you building for the market or building what's interesting?
 
-      THE REAL TEST: Does HIVE make money by April 2025 (post-Panasci)?
+      OPPORTUNITIES:
+      - Local Buffalo businesses need AI ops (brain's idea.001)
+      - HIVE AI builder could pivot to broader SMB market
+      - Framer + AI automation = productized service potential
 
     future_proof_score: 7/10  # UPGRADED — AI builder ages better than social platform
 
@@ -207,6 +220,20 @@ connections:
       - "2024: Google Advanced Data Analytics certification (Python, TikTok data)"
       - "2025: Listed on Framer Experts marketplace"
       - "2025: Pursuing MS in Data Science to merge analytics + entrepreneurship"
+
+    # Skills:
+    skills:
+      technical:
+        - "Software development"
+        - "Framer (expert-level)"
+        - "Python"
+        - "Data analytics"
+        - "Web development"
+      business:
+        - "Local SEO"
+        - "Google Business Profile"
+        - "Social media (250M impressions)"
+        - "Small business services"
 
     # Credentials:
     credentials:
@@ -271,40 +298,42 @@ connections:
     collaboration_fit: very-high
 
     strategic_notes: |
-      Noah is the most "ready to make money NOW" person in this network.
+      STATUS: December 2025 — builder, can code, shipping projects.
+
+      SKILLS STACK:
+      - Framer (expert) + Python + Data Analytics + Web Dev
+      - This is a BUILDER, not just a business guy
+      - Can ship software, not just pitch decks
 
       WHAT'S WORKING:
       - OWSH Unlimited = real business with real clients
       - Free build → monthly recurring is SMART acquisition model
-      - Framer expertise is differentiated — faster, cheaper, better than WordPress
-      - 250M impressions background = credibility for marketing services
-      - Data analytics skill = can offer "data-driven" positioning to SMBs
+      - Framer expertise = differentiated, fast shipping
+      - Can add AI layer to services (has the technical chops)
 
-      WHY HIVE COO MIGHT MAKE SENSE NOW:
-      - If HIVE is pivoting to AI builder, Noah's analytics + web skills fit
-      - COO of infrastructure company > COO of social app
-      - Could be building skills/equity while OWSH generates cash
+      DECEMBER 2025 QUESTIONS:
+      1. What are you building NOW?
+      2. Is OWSH still active? What's the MRR?
+      3. What's the tech stack you're most productive in?
+      4. HIVE or something new — where's the energy?
 
-      SCALE PATH FOR NOAH:
-      1. Productize OWSH — Framer templates + local SEO playbook as digital products
-      2. Niche down — "OWSH for contractors" or "OWSH for restaurants"
-      3. Add AI layer — automated reporting, review responses, content gen
-      4. Let HIVE be the moonshot, OWSH be the cash machine
+      BUILDER OPPORTUNITIES:
+      - AI-powered local business tools (automate the manual stuff)
+      - Framer templates + AI = productized offering
+      - Data analytics dashboards for SMBs
+      - Review response automation
+      - Content generation for local businesses
 
-      THE BIG QUESTION:
-      Is pursuing MS in Data Science the right move, or should he be shipping?
-      - Pro: Analytics + AI skills compound value
-      - Con: 2 more years of school vs. building OWSH into $50k MRR
+      SCALE PATHS:
+      1. Productize OWSH — templates + playbooks as products
+      2. Niche vertical — "AI ops for contractors" or restaurants
+      3. Build once, sell many — software > services
+      4. Combine with Jacob's platform skills for infrastructure play
 
-      COLLABORATION OPPORTUNITIES:
-      1. OWSH + AI automation = "Local Business AI Ops" (brain's idea.001)
-      2. His Framer templates + your distribution = productized service play
-      3. Buffalo local business market — he has client relationships, trust
-
-      PUSH HIM ON:
-      - "What's your MRR from OWSH right now?"
-      - "Can you 10x revenue without 10x-ing your time?"
-      - "What would it take to make OWSH your full focus?"
+      COLLABORATION:
+      - Two builders who can code = ship fast together
+      - Buffalo market knowledge + technical skills = local moat
+      - Question: what's the fastest path to $10k MRR together?
 
     future_proof_score: 8/10  # Analytics + AI skills + service business = adapts well
 
